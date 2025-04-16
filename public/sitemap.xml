@@ -137,5 +137,7 @@
     <loc>//localhost:1313/categories/</loc>
   </url><url>
     <loc>//localhost:1313/about/</loc>
+  </url><url>
+    <loc>//localhost:1313/about1/</loc>
   </url>
 </urlset>

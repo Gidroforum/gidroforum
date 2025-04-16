@@ -4,7 +4,7 @@ plain: true
 theme: 'light'
 ---
 # ГИДРОФОРУМ – надежные поставки насосного оборудования по Югу России
-|wide](https://www.apple.com.cn/newsroom/images/values/environment/Apple-Earth-Day-India-mangrove-Alibaug-canoe_Full-Bleed-Image.jpg.large_2x.jpg)
+![текст|wide](https://www.apple.com.cn/newsroom/images/values/environment/Apple-Earth-Day-India-mangrove-Alibaug-canoe_Full-Bleed-Image.jpg.large_2x.jpg)
 Компания **«ГИДРОФОРУМ»** – специализированный поставщик промышленного насосного оборудования, а также электротехнического оборудования для систем управления и автоматизации. Наша компания осуществляет подбор, проектирование и поставку насосов ведущих мировых производителей:
 
 - WILO
@@ -31,7 +31,7 @@ theme: 'light'
 - Пожаротушение
 
 ## Почему выбирают нас?
-(https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-ecosystem-230118_big.jpg.large_2x.jpg)
+![текст](https://www.apple.com.cn/newsroom/images/values/environment/Apple-Earth-Day-India-mangrove-Usha-Thakur_big.jpg.large_2x.jpg)jpg)
 
 ✅ Прямые поставки от ведущих мировых производителей  
 ✅ Профессиональный подбор оборудования  

@@ -1,105 +1,192 @@
 ---
-title: "iTheme for Hugo"
-date: 2023-03-25T15:04:53+08:00
-description: "an introduce for iTheme"
+title: "Шкафы управления: виды, назначение и особенности выбора"
+date: 2023-03-25
+description: "Полное руководство по шкафам управления для насосов, вентиляции и промышленного оборудования"
 draft: false
-author: "Floyd Li"
-cover: "https://images.pexels.com/photos/11035544/pexels-photo-11035544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-tags: ["Introduce","Demo"]
+author: "arm"
+cover: 'https://allxx88.github.io/armarost/images/shkaf_upr.png'
+tags: ["Шкафы управления","Промышленное оборудование"]
 theme: "light"
 ---
 
-**If you like this theme, please [give me a star](https://github.com/floyd-li/hugo-theme-itheme)!**
 
-## Introduction
+## Что такое шкаф управления?
 
-[中文说明](/posts/hello-world-cn/)
+**Шкаф управления** — это электротехническое устройство для автоматизации и контроля работы оборудования. Основные функции:
 
-An Apple style theme for [Hugo](https://gohugo.io/), inspired by [astro-air-blog](https://github.com/austin2035/astro-air-blog)
+- Защита от перегрузок
+- Дистанционное управление
+- Мониторинг параметров
+- Аварийное отключение
 
-## Preview
+![Шкаф управления промышленный](/images/control-cabinet.jpg "Типовой шкаф управления")
 
-[Demo Site](https://hugo-theme-itheme.netlify.app)
+## Основные виды шкафов управления
 
-## Quick Start
+### 1. Шкаф управления насосами (ШУН)
+Применяется в системах:
+- Водоснабжения
+- Канализации
+- Пожаротушения
 
-Before you start, make sure you have installed [Hugo](https://gohugo.io/).
+Характеристики:
+- Мощность от 0.5 до 315 кВт
+- Защита IP54/IP65
+- Автоматическое поддержание давления
 
-### Quick start with the demo site
+### 2. Шкаф управления вентиляцией
+Функции:
+- Регулировка скорости вентиляторов
+- Управление заслонками
+- Контроль температуры
 
-Here's the [demo site repo](https://github.com/floyd-li/itheme-demo-site)
+### 3. Пожарные шкафы
+Особенности:
+- Управление дымоудалением
+- Запуск противопожарных насосов
+- Соответствие ГОСТ Р 53325
 
-```bash
-git clone --recurse-submodules https://github.com/floyd-li/itheme-demo-site.git my-site
-cd ./my-site && hugo server -D
-```
+## Как выбрать шкаф управления?
 
-Then you can visit `http://localhost:1313` to see the demo site!
+**Критерии выбора:**
 
-### Use the theme for existed site
+| Параметр | Описание |
+|----------|----------|
+| Мощность | Соответствие подключаемому оборудованию |
+| Защита IP | От IP20 до IP65 |
+| Габариты | Высота/ширина/глубина |
+| Автоматика | Schneider, ABB, Siemens |
 
-```bash
-git submodule add https://github.com/floyd-li/hugo-theme-itheme.git themes/hugo-theme-itheme
-echo "theme = 'hugo-theme-itheme'" >> config.toml
-```
+## Схема подключения
 
-Then you need to add some configuration to `config.toml`, please flow the [Site Configuration](#site-configuration).
+Типовая схема включает:
 
-## Screenshot
+1. Вводной автомат
+2. Контакторы
+3. Реле управления
+4. Блок автоматики
+5. Клеммные колодки
 
-![screenshot](https://raw.githubusercontent.com/floyd-li/hugo-theme-itheme/master/images/screenshot.png)
+```circuit
++-----------------------+
+|       Шкаф ШУН        |
++-----------------------+
+| 1. Автомат ввода      |
+| 2. Частотный привод   |
+| 3. Реле давления      |
+| 4. Блок управления    |
++-----------------------+
 
-## Features
+## Монтаж и техническое обслуживание шкафов управления
 
-- `Light` and `Dark` mode for post
-- Three different sizes for images in the post
-- `i18n` support (currently only support `en` and `zh-hans`, there is a great need for contributing translation)
+### Требования к установке
 
-## Configuration
+1. **Профессиональный монтаж**:
+   - Выполняется сертифицированными электромонтажниками
+   - Требуется допуск СРО для промышленных объектов
+   - Обязательная проверка заземления (сопротивление ≤ 4 Ом)
 
-### Site Configuration
+2. **Нормативная база**:
+   - ПУЭ 7 изд. (главы 1.7, 4.1, 5.3)
+   - ГОСТ Р 50571.5.52-2011
+   - ТР ТС 004/2011 (для взрывозащищённых исполнений)
 
-```toml
-defaultContentLanguage = "en" # current only supported 'en' and 'zh-hans', see the 'i18n' folder
-[params]
-  defaultCover = 'https://example.com/cover.jpg' # default cover image for post not setting cover
-  email = 'floyd.li@outlook.com' # the email address display in the footer
-  [[params.socialMedia]] # custom social links display in the footer, you can add one or more
-    name = 'Github'
-    url = 'https://github.com/floyd-li'
-  [[params.socialMedia]]
-    name = 'Twitter'
-    url = 'https://twitter.com/some-one'
-  [[params.blogroll]] # blogroll links display in the footer, you can add one or more
-    name = 'Apple'
-    url = 'https://Apple.com/'
-  [[params.blogroll]]
-    name = 'Google'
-    url = 'https://Google.com/'
-```
+3. **Этапы монтажа**:
 
-### Post Configuration
+```mermaid
+graph TD
+    A[Разметка места установки] --> B[Крепление шкафа]
+    B --> C[Подвод кабелей]
+    C --> D[Коммутация оборудования]
+    D --> E[Пробный пуск]
+Регламент технического обслуживания
+Периодичность:
 
-```markdown
----
-title: 'Some Article'
-date: '2022-10-27T13:06:38+08:00'
-draft: true
-description: 'some description of the article'
-author: 'author of this article'
-cover: 'https://example.com/cover.jpg' // if not set cover, it will use the 'defaultCover' in site configuration
-tags: ["tag1", "tag2", "tag3"]
-theme: "dark" // you can set 'light' or 'dark' here
----
-```
+Ежеквартальный осмотр
 
-### Three display modes of images
+Годовое комплексное ТО
 
-The three display modes of images are: `inline`, `big`, `wide`, you can visit the [demo site](https://hugo-theme-itheme.netlify.app/posts/mark-down-syntax/#Image) for preview
-When you edit your markdown file, you can add `inline`, `big` or `wide` to the image alt, like this:
+Внеочередной осмотр после аварий
 
-```markdown
-![alt content|wide](a.png)
-```
+Работы при ТО:
 
-The Separator is `|`, and the default mode is `big`.
+Визуальный контроль:
+
+Состояние корпуса (отсутствие коррозии)
+
+Маркировка кабелей
+
+Индикация приборов
+
+Измерительные процедуры:
+
+Замер сопротивления изоляции (≥1 МОм)
+
+Проверка срабатывания защит
+
+Контроль температуры (Δt ≤ 15°C от среды)
+
+Типовые неисправности и решения
+Проблема	Причина	Способ устранения
+Окисление контактов	Повышенная влажность	Зачистка + нанесение контактной смазки
+Выход реле	Превышение коммутационного ресурса	Замена с подбором аналога (Finder 40.52)
+Перегрев	Недостаточное сечение проводников	Перерасчёт нагрузки + замена кабеля
+Где приобрести шкафы управления?
+Критерии выбора поставщика
+Производственные мощности:
+
+Собственное конструкторское бюро
+
+Испытательные стенды
+
+Сертифицированная сборка (ISO 9001)
+
+Документация:
+
+Паспорт изделия с электрическими схемами
+
+Протоколы заводских испытаний
+
+Декларация соответствия ТР ЕАЭС
+
+Сервисная поддержка:
+
+Гарантия от 2 лет
+
+Аварийный выезд в течение 24 часов
+
+Обучение персонала
+
+Стоимость решений
+Тип оборудования	Ценовой диапазон	Срок изготовления
+Базовый ШУН	25 000–50 000 ₽	3–5 рабочих дней
+Модульный ШУВ	75 000–120 000 ₽	7–10 дней
+Взрывозащищённое исполнение	от 180 000 ₽	от 14 дней
+Запросить коммерческое предложение{.btn .btn-primary}
+
+Заключение: преимущества современных решений
+Безопасность:
+
+Автоматическое отключение при КЗ
+
+Защита от перегрузок (класс 10А по IEC 60947)
+
+Мониторинг параметров в реальном времени
+
+Экономия:
+
+Снижение энергопотребления до 40% (с частотным регулированием)
+
+Увеличение ресурса оборудования
+
+Снижение затрат на обслуживание
+
+Интеграция:
+
+Поддержка промышленных протоколов (Modbus, Profibus)
+
+Совместимость с SCADA-системами
+
+Возможность удалённого управления
+
+Для сложных технологических процессов рекомендуем разработку индивидуального проекта с проведением пусконаладочных работ.

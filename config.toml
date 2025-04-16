@@ -1,10 +1,10 @@
-baseURL = '/'
+baseURL = 'gidroforum.ru'
 languageCode = 'en'
 defaultContentLanguage = "en"
 hasCJKLanguage = true
 enableEmoji = true
-title = 'iTheme'
-copyright = 'Floyd Li'
+title = 'ГИДРОФОРУМ'
+copyright = 'gidroforum.ru'
 theme = 'hugo-theme-itheme'
 pagerSize = 5
 [params]
@@ -14,5 +14,5 @@ pagerSize = 5
     name = 'Github'
     url = 'https://github.com/floyd-li'
   [[params.blogroll]]
-    name = '驭风笔记'
+    name = 'VK'
     url = 'https://yufengbiji.com/'

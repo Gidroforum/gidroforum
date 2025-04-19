@@ -1,6 +1,6 @@
 baseURL = 'gidroforum.ru'
-languageCode = 'en'
-defaultContentLanguage = "en"
+languageCode = 'ru'
+defaultContentLanguage = "ru"
 hasCJKLanguage = true
 enableEmoji = true
 title = 'ГИДРОФОРУМ'

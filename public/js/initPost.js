@@ -1,6 +1,6 @@
 (() => {
   // ns-hugo-params:<stdin>
-  var stdin_default = { baseURL: "gidroforum.ru/" };
+  var stdin_default = { baseURL: "//localhost:1313/" };
 
   // <stdin>
   var scriptMd5 = document.createElement("script");

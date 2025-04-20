@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>红树林 on ГИДРОФОРУМ</title>
-    <link>gidroforum.ru/tags/%E7%BA%A2%E6%A0%91%E6%9E%97/</link>
+    <link>//localhost:1313/tags/%E7%BA%A2%E6%A0%91%E6%9E%97/</link>
     <description>Recent content in 红树林 on ГИДРОФОРУМ</description>
     <generator>Hugo</generator>
     <language>ru</language>
     <copyright>gidroforum.ru</copyright>
     <lastBuildDate>Wed, 01 Mar 2023 13:06:38 +0800</lastBuildDate>
-    <atom:link href="gidroforum.ru/tags/%E7%BA%A2%E6%A0%91%E6%9E%97/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E7%BA%A2%E6%A0%91%E6%9E%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From farm to sea: Conserving mangroves to protect local livelihoods and the planet</title>
-      <link>gidroforum.ru/posts/apple/</link>
+      <link>//localhost:1313/posts/apple/</link>
       <pubDate>Wed, 01 Mar 2023 13:06:38 +0800</pubDate>
-      <guid>gidroforum.ru/posts/apple/</guid>
+      <guid>//localhost:1313/posts/apple/</guid>
       <description>&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;figure class=&#34;image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-wide&#34;&gt;  &lt;div class=&#34;component-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;image-sharesheet&#34;&gt;&#xD;&#xA;      &lt;div class=&#34;image image-load image-asset image-34bb5f6d6a28a368b3593369a1e00218&#34; id=&#34;lht34bb5f6d6a28a368b3593369a1e00218&#34;&gt;&#xD;&#xA;        &lt;picture  class=&#34;picture&#34;&gt;&#xD;&#xA;          &lt;img class=&#34;picture-image&#34; data-src=&#34;https://www.apple.com.cn/newsroom/images/values/environment/Apple-Earth-Day-India-mangrove-Alibaug-canoe_Full-Bleed-Image.jpg.large_2x.jpg&#34; alt=&#34;在印度马哈拉施特拉邦，Apple 与 Applied Environmental Research Foundation 展开合作，对红树林进行保护与培育。这一海岸森林生态系统可以吸收和存储大气中的二氧化碳。|wide&#34;  /&gt;&#xD;&#xA;        &lt;/picture&gt;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;image-description&#34;&gt;&#xD;&#xA;      &lt;div class=&#34;image-caption&#34;&gt;&#xD;&#xA;        在印度马哈拉施特拉邦，Apple 与 Applied Environmental Research Foundation 展开合作，对红树林进行保护与培育。这一海岸森林生态系统可以吸收和存储大气中的二氧化碳。&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>

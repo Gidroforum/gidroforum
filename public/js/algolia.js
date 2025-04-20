@@ -1,7 +1,7 @@
 (() => {
   // ns-hugo-params:<stdin>
-  var baseURL = "gidroforum.ru/";
-  var params = { blogroll: [{ name: "VK", url: "https://yufengbiji.com/" }], defaultcover: "https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-regular_2x.jpg", email: "floyd.li@outlook.com", showcopyright: true, showmore: true, showrss: true, socialmedia: [{ name: "Github", url: "https://github.com/floyd-li" }] };
+  var baseURL = "//localhost:1313/";
+  var params = { blogroll: [{ name: "VK", url: "https://yufengbiji.com/" }], customfonts: "family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap&subset=cyrillic", defaultcover: "https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-regular_2x.jpg", email: "floyd.li@outlook.com", showcopyright: true, showmore: true, showrss: true, socialmedia: [{ name: "Github", url: "https://github.com/floyd-li" }] };
 
   // <stdin>
   var { appid, appkey, searchindex: indexName, enabled } = params.algolia;

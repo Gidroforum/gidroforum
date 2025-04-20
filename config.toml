@@ -1,4 +1,4 @@
-baseURL = 'gidroforum.ru'
+baseURL = 'https://gidroforum.github.io/gidroforum/'
 languageCode = 'ru'
 defaultContentLanguage = "ru"
 hasCJKLanguage = true

@@ -43,3 +43,5 @@ theme: 'light'
 - **Телефон:** +7 (XXX) XXX-XX-XX  
 - **Email:** info@gidroforum.ru  
 - **Сайт:** [gidroforum.ru](https://gidroforum.ru) 
+
+{{< about_html >}}

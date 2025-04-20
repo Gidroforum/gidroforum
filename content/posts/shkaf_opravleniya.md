@@ -4,7 +4,7 @@ date: 2023-03-25
 description: "Полное руководство по шкафам управления для насосов, вентиляции и промышленного оборудования"
 draft: false
 author: "arm"
-cover: '/armarost/images/shkaf_upr.png'
+cover: '/images/shkaf_upr.png'
 tags: ["Шкафы управления","Промышленное оборудование"]
 theme: "light"
 ---

@@ -40,15 +40,13 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build with Hugo
-        env:
-          HUGO_ENV: production
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         run: |
           hugo \
             --minify \
-            --cleanDestinationDir \  # Очистка перед сборкой
-            --gc \  # Сборка мусора
-            --baseURL "${{ steps.pages.outputs.base_url }}"
+            --templateMetrics \
+            --templateMetricsHints \
+            --verbose
+         
 
       - name: Validate language outputs
         run: |

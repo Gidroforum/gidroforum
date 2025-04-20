@@ -1,6 +1,6 @@
-baseURL = 'https://gidroforum.github.io/gidroforum/'
-languageCode = 'ru'
-defaultContentLanguage = "ru"
+baseURL = 'https://gidroforum.ru'
+languageCode = 'en'
+defaultContentLanguage = "en"
 hasCJKLanguage = true
 enableEmoji = true
 title = 'ГИДРОФОРУМ'
@@ -8,7 +8,6 @@ copyright = 'gidroforum.ru'
 theme = 'hugo-theme-itheme'
 pagerSize = 5
 [params]
-  customFonts = "family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap&subset=cyrillic"
   defaultCover = 'https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-regular_2x.jpg'
   email = 'floyd.li@outlook.com'
   [[params.socialMedia]]

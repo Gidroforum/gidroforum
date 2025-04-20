@@ -4,7 +4,7 @@ date: 2023-03-25
 description: "Полное руководство по шкафам управления для насосов, вентиляции и промышленного оборудования"
 draft: false
 author: "arm"
-cover: 'https://allxx88.github.io/armarost/images/shkaf_upr.png'
+cover: '/armarost/images/shkaf_upr.png'
 tags: ["Шкафы управления","Промышленное оборудование"]
 theme: "light"
 ---
@@ -19,7 +19,7 @@ theme: "light"
 - Мониторинг параметров
 - Аварийное отключение
 
-![Шкаф управления промышленный](/images/control-cabinet.jpg "Типовой шкаф управления")
+![PS](/images/shkaf_upr.png)
 
 ## Основные виды шкафов управления
 

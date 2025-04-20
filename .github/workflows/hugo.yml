@@ -8,16 +8,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Git
-        run: |
-          git config --global http.https://github.com/.extraheader "AUTHORIZATION: basic ${{ secrets.GITHUB_TOKEN }}"
-          
-      - name: Checkout
+      - name: Checkout + Submodules
         uses: actions/checkout@v4
         with:
-          submodules: 'recursive'
+          submodules: recursive
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -25,18 +20,29 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Fix theme permissions
+      - name: Template Debug
         run: |
-          chmod -R 755 themes/
+          echo "Шаблоны в layouts:"
+          find layouts -type f
+          echo -e "\nШаблоны в теме:"
+          find themes -name "*.html" | head -n 10
 
       - name: Build
         run: |
           hugo \
             --minify \
+            --cleanDestinationDir \
             --templateMetrics \
-            --i18n-warnings
+            --path-warnings
         env:
           HUGO_ENV: production
+
+      - name: Verify Output
+        run: |
+          echo "Сгенерированные файлы:"
+          find public -name "*.html" | xargs ls -la
+          echo -e "\nПроверка index.html:"
+          grep -A10 "<body" public/index.html || echo "Нет index.html!"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

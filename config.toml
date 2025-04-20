@@ -1,4 +1,5 @@
 baseURL = 'https://gidroforum.ru'
+canonifyURLs = true
 languageCode = 'ru'
 defaultContentLanguage = "ru"
 hasCJKLanguage = true

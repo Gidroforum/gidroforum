@@ -1,6 +1,6 @@
 (() => {
   // ns-hugo-params:<stdin>
-  var baseURL = "http://localhost:1313/";
+  var baseURL = "https://gidroforum.ru/";
   var params = { blogroll: [{ name: "VK", url: "https://yufengbiji.com/" }], defaultcover: "https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-regular_2x.jpg", email: "floyd.li@outlook.com", showcopyright: true, showmore: true, showrss: true, socialmedia: [{ name: "Github", url: "https://github.com/floyd-li" }] };
 
   // <stdin>

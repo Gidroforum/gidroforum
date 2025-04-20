@@ -5,11 +5,11 @@
         <a href="{{ "" | relURL }} " class="nav-title">{{ .Site.Title }}</a>
         <div class="nav-menu">
           <div class="nav-item-wrapper">
-            <a href="{{ "posts" | relURL }} " class="nav-item-content">Статьи</a>
+            <a href="{{ "posts" | relURL }} " class="nav-item-content">{{ i18n "posts" }}</a>
           </div>
           {{- if .Site.GetPage "about" -}}
           <div class="nav-item-wrapper">
-            <a href="{{ "about" | relURL }}" class="nav-item-content">О нас</a>
+            <a href="{{ "about" | relURL }}" class="nav-item-content">{{ i18n "about" }}</a>
           </div>
           {{- end -}}
           {{- if site.Params.ShowRSS -}}
@@ -19,7 +19,7 @@
           {{- end -}}
           {{- if site.Params.algolia.enabled -}}
           <div class="nav-item-wrapper">
-            <a href="#" onclick="toggleSearchModal()" class="nav-item-content">Поиск</a>
+            <a href="#" onclick="toggleSearchModal()" class="nav-item-content">{{ i18n "search" }}</a>
           </div>
           {{- end -}}
         </div>
@@ -27,11 +27,6 @@
     </div>
   </div>
 </nav>
-
-<div id="lang-test">
-  {{ i18n "hello" }}
-  {{ .Lang }} | {{ .Site.Language.Lang }}
-</div>
 
 <script>
   function toggleSearchModal(){

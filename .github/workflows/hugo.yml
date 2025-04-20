@@ -1,14 +1,17 @@
-name: Deploy Hugo
+name: Deploy Hugo Site
 
 on:
   push:
-    branches: [main]
+    branches: [ "main" ]
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout + Submodules
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
@@ -20,29 +23,23 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Template Debug
-        run: |
-          echo "Шаблоны в layouts:"
-          find layouts -type f
-          echo -e "\nШаблоны в теме:"
-          find themes -name "*.html" | head -n 10
-
       - name: Build
         run: |
           hugo \
             --minify \
             --cleanDestinationDir \
-            --templateMetrics \
-            --path-warnings
+            --gc \
+            --printPathWarnings \  # Правильное имя флага
+            --printI18nWarnings \
+            --templateMetrics
         env:
           HUGO_ENV: production
 
-      - name: Verify Output
+      - name: Verify Build
         run: |
-          echo "Сгенерированные файлы:"
-          find public -name "*.html" | xargs ls -la
-          echo -e "\nПроверка index.html:"
-          grep -A10 "<body" public/index.html || echo "Нет index.html!"
+          echo "Generated files:"
+          ls -la public/
+          [ -f public/index.html ] && echo "Index.html exists" || echo "Missing index.html"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

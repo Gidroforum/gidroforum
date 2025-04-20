@@ -1,74 +1,45 @@
-name: Deploy Hugo site to Pages
+name: Deploy Hugo
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-defaults:
-  run:
-    shell: bash
+    branches: [main]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.128.0  # Рекомендую использовать 'latest' или актуальную версию
     steps:
-      - name: Install Hugo CLI (Extended)
+      - name: Setup Git
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+          git config --global http.https://github.com/.extraheader "AUTHORIZATION: basic ${{ secrets.GITHUB_TOKEN }}"
           
-      - name: Checkout with submodules
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
-          fetch-depth: 0  # Важно для правильной работы с git-подмодулями
+          submodules: 'recursive'
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
 
-      - name: Build with Hugo
+      - name: Fix theme permissions
+        run: |
+          chmod -R 755 themes/
+
+      - name: Build
         run: |
           hugo \
             --minify \
             --templateMetrics \
-            --templateMetricsHints \
-            --verbose
-      - name: Check i18n files
- 	 run: |
-   	  find i18n -type f -exec echo "File: {}" \; -exec cat {} \;
-   	  grep -r "i18n" layouts/ 
+            --i18n-warnings
+        env:
+          HUGO_ENV: production
 
-      - name: Validate language outputs
-        run: |
-          ls -la public/  # Проверка сгенерированных языковых версий
-          [ -d public/en ] && echo "English version exists" || echo "English version missing"
-          [ -d public/ru ] && echo "Russian version exists" || echo "Russian version missing"
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: ./public
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

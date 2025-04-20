@@ -1,48 +1,15 @@
-name: Deploy Hugo Site
+- name: Setup Go
+  uses: actions/setup-go@v4
+  with:
+    go-version: '1.21'
 
-on:
-  push:
-    branches: [ "main" ]
+- name: Init Modules
+  run: |
+    hugo mod get -u
+    hugo mod npm pack
 
-permissions:
-  contents: write
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
-
-      - name: Build
-        run: |
-          hugo \
-            --minify \
-            --cleanDestinationDir \
-            --gc \
-            --printPathWarnings \  # Правильное имя флага
-            --printI18nWarnings \
-            --templateMetrics
-        env:
-          HUGO_ENV: production
-
-      - name: Verify Build
-        run: |
-          echo "Generated files:"
-          ls -la public/
-          [ -f public/index.html ] && echo "Index.html exists" || echo "Missing index.html"
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+- name: Build
+  run: hugo --minify --gc --cleanDestinationDir
+  env:
+    HUGO_ENV: production
+    HUGO_MODULE_REPLACEMENTS: 'github.com/floyd-li/itheme-demo-site -> github.com/<ваш-fork>/itheme-demo-site'

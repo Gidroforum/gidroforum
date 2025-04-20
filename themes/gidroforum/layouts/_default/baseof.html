@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="js no-touch  progressive-image  no-reduced-motion progressive" lang="{{ .Site.Language.Lang }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="{{ if .IsPage }} page-article {{ else }} page-landing {{ end }}  {{ if eq .Page.Params.theme "dark" }} theme-dark {{ end }}">
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+    {{ block "main" . }}
+    {{ end }}
+    {{ $isDark := eq .Page.Params.theme "dark"}}
+    {{ partial "footer.html" (dict "dark" $isDark) }}
+
+  </body>
+    <!-- algolia related script -->
+    {{ if site.Params.algolia.enabled }}
+    <script src="{{ "js/algoliasearch.umd.js" | relURL }}"></script>
+    <script src="{{ "js/autocomplete-js.js" | relURL }}"></script>
+    {{ end }}
+
+    <!-- custom js files -->
+    {{ range site.Params.js }}
+        <script src="{{ .url | relURL }}"></script>
+    {{ end }}
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(101112227, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/101112227" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->	
+ 
+
+</html>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HomePod on ГИДРОФОРУМ</title>
-    <link>http://localhost:1313/tags/homepod/</link>
+    <link>https://gidroforum.ru/tags/homepod/</link>
     <description>Recent content in HomePod on ГИДРОФОРУМ</description>
     <generator>Hugo</generator>
     <language>ru</language>
     <copyright>gidroforum.ru</copyright>
     <lastBuildDate>Mon, 27 Feb 2023 13:06:38 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/homepod/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gidroforum.ru/tags/homepod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apple 推出新款 HomePod，带来突破性音质与智能体验</title>
-      <link>http://localhost:1313/posts/apple-introduces-the-new-homepod-with-breakthrough-sound-and-intelligence/</link>
+      <link>https://gidroforum.ru/posts/apple-introduces-the-new-homepod-with-breakthrough-sound-and-intelligence/</link>
       <pubDate>Mon, 27 Feb 2023 13:06:38 +0800</pubDate>
-      <guid>http://localhost:1313/posts/apple-introduces-the-new-homepod-with-breakthrough-sound-and-intelligence/</guid>
+      <guid>https://gidroforum.ru/posts/apple-introduces-the-new-homepod-with-breakthrough-sound-and-intelligence/</guid>
       <description>&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;figure class=&#34;image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on image-big&#34;&gt;  &lt;div class=&#34;component-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;image-sharesheet&#34;&gt;&#xD;&#xA;      &lt;div class=&#34;image image-load image-asset image-b36dd80c7266389b09de406a4022ce5e&#34; id=&#34;lhtb36dd80c7266389b09de406a4022ce5e&#34;&gt;&#xD;&#xA;        &lt;picture  class=&#34;picture&#34;&gt;&#xD;&#xA;          &lt;img class=&#34;picture-image&#34; data-src=&#34;https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg&#34; alt=&#34;HomePod 汇集了多项 Apple 创新技术、Siri 智能和智能家居功能，为用户带来前所未有的聆听体验。&#34;  /&gt;&#xD;&#xA;        &lt;/picture&gt;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;image-description&#34;&gt;&#xD;&#xA;      &lt;div class=&#34;image-caption&#34;&gt;&#xD;&#xA;        HomePod 汇集了多项 Apple 创新技术、Siri 智能和智能家居功能，为用户带来前所未有的聆听体验。&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>

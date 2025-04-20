@@ -5,7 +5,7 @@ hasCJKLanguage = true
 enableEmoji = true
 title = 'ГИДРОФОРУМ'
 copyright = 'gidroforum.ru'
-theme = 'hugo-theme-itheme'
+theme = 'gidroforum'
 pagerSize = 5
 [params]
   defaultCover = 'https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-regular_2x.jpg'

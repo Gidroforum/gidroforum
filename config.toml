@@ -6,6 +6,9 @@ enableEmoji = true
 title = 'ГИДРОФОРУМ'
 copyright = 'gidroforum.ru'
 theme = "gidroforum"
+[module]
+  [[module.imports]]
+    path = "github.com/floyd-li/itheme-demo-site"
 pagerSize = 5
 [params]
   defaultCover = 'https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-regular_2x.jpg'

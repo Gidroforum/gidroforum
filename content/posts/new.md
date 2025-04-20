@@ -18,7 +18,7 @@ theme: 'loght'
 - Перекачки канализационных стоков (**фекальные насосы**)
 
 
-![PS]({{ .Site.BaseURL }}images/pog_nasos.png)
+![PS](/images/pog_nasos.png)
 
 ## Основные виды погружных насосов
 

@@ -44,4 +44,4 @@ theme: 'light'
 - **Email:** info@gidroforum.ru  
 - **Сайт:** [gidroforum.ru](https://gidroforum.ru) 
 
-{{< about_html >}}
+{{< about >}}

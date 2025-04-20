@@ -46,7 +46,10 @@ jobs:
             --templateMetrics \
             --templateMetricsHints \
             --verbose
-         
+      - name: Check i18n files
+ 	 run: |
+   	  find i18n -type f -exec echo "File: {}" \; -exec cat {} \;
+   	  grep -r "i18n" layouts/ 
 
       - name: Validate language outputs
         run: |

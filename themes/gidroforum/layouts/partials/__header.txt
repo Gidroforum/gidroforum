@@ -4,6 +4,9 @@
       <div class="nav-content">
  
         <a href="{{ "" | relURL }} " class="nav-title">{{ .Site.Title }}</a>
+<!--Название сайта
+<a href="{{ "" | relURL }} " class="nav-title"><img src="/firms/logo.png" alt="ГИДРОФОРУМ" ></a>
+-->
 
         <div class="nav-menu">
           <div class="nav-item-wrapper">

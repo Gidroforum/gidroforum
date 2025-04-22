@@ -2,7 +2,10 @@
   <div class="nav-wrapper">
     <div class="nav-content-wrapper">
       <div class="nav-content">
-        <a href="{{ "" | relURL }} " class="nav-title">{{ .Site.Title }}</a>
+        
+
+
+<a href="{{ "" | relURL }} " class="nav-title"><img src="/firms/logo.png" height="27px"/>&nbsp;{{ .Site.Title }}</a>
         <div class="nav-menu">
           <div class="nav-item-wrapper">
             <a href="{{ "posts" | relURL }} " class="nav-item-content">Статьи</a>
@@ -13,9 +16,9 @@
           </div>
           {{- end -}}
           {{- if site.Params.ShowRSS -}}
-          <div class="nav-item-wrapper">
+          <!---RSS  <div class="nav-item-wrapper">
             <a href="{{ "index.xml" | relURL }}" class="nav-item-content" target="_blank">RSS</a>
-          </div>
+          </div>-->
           {{- end -}}
           {{- if site.Params.algolia.enabled -}}
           <div class="nav-item-wrapper">

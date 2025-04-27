@@ -25,9 +25,9 @@
 [postDate]
     other = "Опубликовано"
 [copyright]
-    other = "Copyright"
+    other = "Источник"
 [licenses]
-    other = "gidroforum"
+    other = "Гидрофорум"
 [search]
     other = "Поиск"
 [searchPlaceholder]

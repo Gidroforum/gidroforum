@@ -3,14 +3,14 @@ title: 'Электронасосные центробежные погружны
 date: '2023-10-15T14:30:00+03:00'
 description: 'Подробный обзор электронасосов ЭЦВ от ГМС Ливгидромаш, включая технические характеристики, области применения и преимущества.'
 author: 'ГИДРОФОРУМ'
-cover: '/images/hms_livgidromash_centrifugal_submersible_pumps_ecv.png'
+cover: '/images/skvazhinnye_nasosy_ecv_obzor_i_primenenie.png'
 tags: ["ЛИВГИДРОМАШ", "насосы эцв"]
 theme: 'light'
 ---
 
 ## Электронасосные центробежные погружные насосы ЭЦВ
 
-![Электронасосные центробежные погружные насосы ЭЦВ](/images/hms_livgidromash_centrifugal_submersible_pumps_ecv.png)
+![Электронасосные центробежные погружные насосы ЭЦВ](/images/skvazhinnye_nasosy_ecv_obzor_i_primenenie.png)
 
 ### Технические характеристики
 

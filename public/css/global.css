@@ -336,7 +336,7 @@ header{
 
 .nav-title {
   color: #1d1d1f;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.14286;
   font-weight: 600;
   letter-spacing: 0.011em;
@@ -351,8 +351,8 @@ header{
 
 
 .nav-item-content {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
   text-decoration: none !important;
   color: #676b5f;
 }
@@ -425,7 +425,7 @@ a.nav-title:hover {
 .nav-item-wrapper {
   margin: 0px 5px;
   padding: 6px 10px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 

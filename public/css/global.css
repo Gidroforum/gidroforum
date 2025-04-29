@@ -423,7 +423,7 @@ a.nav-title:hover {
 }
 
 .nav-item-wrapper {
-  margin: 0px 5px;
+ /* margin: 0px 5px;*/
   padding: 6px 10px;
   border-radius: 10px;
 }

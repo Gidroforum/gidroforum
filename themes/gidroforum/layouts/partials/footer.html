@@ -4,10 +4,14 @@
       <div class="foot-nav">
         <div class="foot-nav-items">
           <div class="item">
-            <div class="logo">{{ .Site.Title}}</div>
-            <div class="email">Email: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></div>
+           <!--- <div class="logo">{{ .Site.Title}}</div>-->
+           <a href="{{ "" | relURL }} " class="nav-title"><img src="/firms/logo.png" height="21px"/>&nbsp;ГИДРОФОРУМ</a>
+           
+
+          
           </div>
           <div class="item">
+            <div class="email">Email: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></div>
             <div class="email">Телефон: <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a></div>
           
           </div>

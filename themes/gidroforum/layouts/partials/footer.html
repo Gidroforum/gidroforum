@@ -6,30 +6,48 @@
           <div class="item">
             <div class="logo">{{ .Site.Title}}</div>
             <div class="email">Email: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></div>
+        
+          </div>
+          <div class="item">
+            <div class="logo">{{ .Site.Title}}</div>
+           
+            <div class="email">Телефон: <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a></div>
+          
+          </div>
+          <div class="item">
+          
+            <div class="email">Адрес: {{ site.Params.adress }}</div>
           </div>
 
-          <div class="item community">
+         <!-- <div class="item">
+            <div class="logo">{{ .Site.Title}}</div>
+            <div class="email">Email: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></div>
+          </div>-->
+
+          <!--<div class="item community">
             <div class="item-title">{{ i18n "socialMedia" }}</div>
             {{ range site.Params.socialMedia }}
               <a href="{{ .url }}" target="_blank">{{ .name}}</a>
             {{ end }}
-          </div>
+          </div>-->
 
-          <div class="item resources">
+        <!-- <div class="item resources">
             <div class="item-title">{{ i18n "related" }}</div>
             {{ range site.Params.blogroll }}
               <a href="{{ .url }}" target="_blank">{{ .name}}</a>
             {{ end }}
-          </div>
-           <div class="nav-item-wrapper">
+          </div>-->
+          <!-- <div class="nav-item-wrapper">
             <a href="{{ "index.xml" | relURL }}" class="nav-item-content" target="_blank"><b>RSS</b></a>
-          </div>
+          </div>-->
         </div>
       </div>
       <div class="bottom">
         <div class="item copyright">
           &copy; {{ now.Format "2006" }}
-          Сайт создан на <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/floyd-li/hugo-theme-itheme" target="_blank">iTheme</a>
+          <a href="/" target="_blank">ГИДРОФОРУМ</a> 
+        <!--  Сайт создан на <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/floyd-li/hugo-theme-itheme" target="_blank">iTheme</a>
+        -->
         </div>
       </div>
     </div>

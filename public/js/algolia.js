@@ -1,7 +1,7 @@
 (() => {
   // ns-hugo-params:<stdin>
   var baseURL = "http://localhost:1313/";
-  var params = { blogroll: [{ name: "VK", url: "https://vk.com/" }], defaultcover: "/images/logo_site.png", email: "floyd.li@outlook.com", showcopyright: true, showmore: true, showrss: true, socialmedia: [{ name: "\u0413\u0418\u0414\u0420\u041E\u0424\u041E\u0420\u0423\u041C", url: "/" }] };
+  var params = { adress: "\u0420\u043E\u0441\u0442\u043E\u0432-\u043D\u0430-\u0414\u043E\u043D\u0443, \u0443\u043B. \u0412\u0430\u0432\u0438\u043B\u043E\u0432\u0430, 62\u0412", blogroll: [{ name: "VK", url: "https://vk.com/" }], defaultcover: "/images/logo_site.png", email: "001@armarost.ru", phone: "+7 (989) 610-02-04", showcopyright: true, showmore: true, showrss: true, socialmedia: [{ name: "\u0413\u0418\u0414\u0420\u041E\u0424\u041E\u0420\u0423\u041C", url: "/" }] };
 
   // <stdin>
   var { appid, appkey, searchindex: indexName, enabled } = params.algolia;

@@ -10,7 +10,9 @@ theme = ["gidroforum"]
 pagerSize = 5
 [params]
   defaultCover = '/images/logo_site.png'
-  email = 'floyd.li@outlook.com'
+  email = '001@armarost.ru'
+  phone = '+7 (989) 610-02-04'
+  adress = 'Ростов-на-Дону, ул. Вавилова, 62В'
   [[params.socialMedia]]
     name = 'ГИДРОФОРУМ'
     url = '/'

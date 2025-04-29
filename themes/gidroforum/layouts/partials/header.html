@@ -10,6 +10,9 @@
           <div class="nav-item-wrapper">
             <a href="{{ "posts" | relURL }} " class="nav-item-content">Статьи</a>
           </div>
+          <div class="nav-item-wrapper">
+            <a href="{{ "tags" | relURL }} " class="nav-item-content">Категории</a>
+          </div>
           {{- if .Site.GetPage "about" -}}
           <div class="nav-item-wrapper">
             <a href="{{ "about" | relURL }}" class="nav-item-content">{{ i18n "about" }}</a>

@@ -17,7 +17,7 @@
 [pagination]
     other = "Пагинация"
 [of]
-    other = "из "
+    other = "из"
 [allTags]
     other = "Все категории"
 [author]

@@ -1,0 +1,123 @@
+<div class="slider-page">
+    <!-- Слайды -->
+    <div class="slider-container">
+        {{ range $index, $element := .Params.slides }}
+        <div class="slide {{ if eq $index 0 }}active{{ end }}">
+            <img src="{{ .image }}" alt="Slide {{ add $index 1 }}" />
+        </div>
+        {{ end }}
+    </div>
+
+    <!-- Кнопки управления -->
+    <button class="<<">❮</button>
+    <button class=">>">❯</button>
+
+    <!-- Точки-индикаторы -->
+    <div class="dots">
+        {{ range $index, $element := .Params.slides }}
+        <span
+            class="dot {{ if eq $index 0 }}active{{ end }}"
+            onclick="currentSlide({{ $index }})"
+        ></span>
+        {{ end }}
+    </div>
+</div>
+
+<style>
+    .simple-slider {
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .slide.active {
+        display: block;
+        animation: fade 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Кнопки */
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 16px;
+        color: white;
+        font-size: 20px;
+        border: none;
+        background: rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    /* Точки */
+    .dots {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .dot {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background: #ddd;
+        cursor: pointer;
+    }
+
+    .dot.active {
+        background: #666;
+    }
+</style>
+
+<script>
+    let slideIndex = 0;
+
+    function showSlides(n) {
+        const slides = document.getElementsByClassName("slide");
+        const dots = document.getElementsByClassName("dot");
+
+        if (n >= slides.length) slideIndex = 0;
+        if (n < 0) slideIndex = slides.length - 1;
+
+        Array.from(slides).forEach((slide) => slide.classList.remove("active"));
+        Array.from(dots).forEach((dot) => dot.classList.remove("active"));
+
+        slides[slideIndex].classList.add("active");
+        dots[slideIndex].classList.add("active");
+    }
+
+    document.querySelector(".prev").addEventListener("click", () => {
+        showSlides((slideIndex -= 1));
+    });
+
+    document.querySelector(".next").addEventListener("click", () => {
+        showSlides((slideIndex += 1));
+    });
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n));
+    }
+</script>

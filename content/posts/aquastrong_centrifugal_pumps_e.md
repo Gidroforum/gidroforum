@@ -1,6 +1,6 @@
 ---
 title: 'Моноблочные центробежные насосы EST от Aquastrong: обзор и характеристики'
-date: '2023-10-05'
+date: '2025-03-05'
 description: 'Полный обзор моноблочных центробежных насосов EST бренда Aquastrong, их технические характеристики, области применения и преимущества.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_centrifugal_pumps_est_review.png'

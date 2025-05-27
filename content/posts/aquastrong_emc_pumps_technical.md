@@ -1,6 +1,6 @@
 ---
 title: 'Моноблочные центробежные насосы EMS от Aquastrong: технические характеристики и применение'
-date: '2023-10-15'
+date: '2025-03-15'
 description: 'Подробный обзор моноблочных центробежных насосов EMS бренда Aquastrong, их характеристик, преимуществ и областей применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_emc_pumps_technical_overview.png'

@@ -1,6 +1,6 @@
 ---
 title: 'Циркуляционный насос EP от Aquastrong: обзор и преимущества'
-date: '2025-10-15'
+date: '2025-04-11'
 description: 'Полное руководство по циркуляционным насосам серии EP бренда Aquastrong, их характеристикам, применению и преимуществам.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_circulation_pump_ep_review.png'

@@ -1,6 +1,6 @@
 ---
 title: 'Насос центробежный IN-LINE NLG от Aquastrong: обзор, характеристики и применение'
-date: '2025-10-01'
+date: '2025-03-01'
 description: 'Полное руководство по насосу центробежному IN-LINE NLG от Aquastrong, включая технические характеристики, области применения и преимущества.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_nlg_pump_review_2024.png'

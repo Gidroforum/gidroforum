@@ -2,6 +2,10 @@
 title: 'О нас'
 plain: true
 theme: 'light'
+slides:
+  - image: "/slider/slide1.png"
+  - image: "/slider/slide2.png"
+  - image: "/slider/slide3.png"
 ---
 # ГИДРОФОРУМ – надежные поставки насосного оборудования по Югу России
 ![ГИДРОФОРУМ - специалист в области насосов](/images/logo_site.png)

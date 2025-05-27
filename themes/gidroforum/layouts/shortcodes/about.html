@@ -1,112 +1,63 @@
 <div class="about-page">
-    <div class="carousel-container">
-        <div class="carousel-track">
-            <!-- Первый дубликат для бесшовной анимации -->
-            <div class="carousel-item">
-                <img src="/firms/wilo.png" alt="WILO" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/lowara.png" alt="LOWARA" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/flygt.png" alt="FLYGT" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/caprari.png" alt="CAPRARI" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/cnp.png" alt="CNP" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/lg.png" alt="LG" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/leo.png" alt="LEO" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/kq.png" alt="KQ" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/aquastrong.png" alt="AQUASTRONG" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/livgidromash.png" alt="LIVGIDROMASH" />
-            </div>
-            <!-- Второй дубликат для бесшовной анимации -->
-            <div class="carousel-item">
-                <img src="/firms/wilo.png" alt="WILO" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/lowara.png" alt="LOWARA" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/flygt.png" alt="FLYGT" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/caprari.png" alt="CAPRARI" />
-            </div>
-            <div class="carousel-item">
-                <img src="/firms/cnp.png" alt="CNP" />
-            </div>
-        </div>
-    </div>
+    <!-- Ваш HTML-контент -->
+
+<div style="display: flex; justify-content: center; padding: 20px 0;">
+  <table style="width: auto; border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://wilo.ru/">
+        <img src="/firms/wilo.png" alt="WILO" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://lowara.su/">
+        <img src="/firms/lowara.png" alt="LOWARA" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://www.flygtrf.ru/">
+        <img src="/firms/flygt.png" alt="Описание 3" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://www.caprari.com/en/">
+        <img src="/firms/caprari.png" alt="Описание 4" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://www.cnprussia.ru/">
+        <img src="/firms/cnp.png" alt="Описание 5" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://www.lcpumps.ru/">
+        <img src="/firms/lg.png" alt="Описание 6" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://leorussia.ru/">
+        <img src="/firms/leo.png" alt="Описание 7" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://kq.com.ru/">
+        <img src="/firms/kq.png" alt="Описание 8" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://aquastrong.it/ru/">
+        <img src="/firms/aquastrong.png" alt="Описание 9" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+    <td style="width: 20%; text-align: center; padding: 10px;">
+      <a href="https://www.hms-livgidromash.ru/">
+        <img src="/firms/livgidromash.png" alt="Описание 10" style="max-width: 100%; height: auto;">
+      </a>
+    </td>
+  </tr>
+</table>
+  </div>
+
 </div>
-
-<style>
-    .carousel-container {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        padding: 20px 0;
-    }
-
-    .carousel-track {
-        display: flex;
-        animation: carousel-scroll 50s linear infinite;
-        position: relative;
-        width: max-content;
-    }
-
-    .carousel-item {
-        flex: 0 0 auto;
-        padding: 0 5px;
-        transition: transform 0.3s ease;
-        width: calc(10% - 5px); /* 5 элементов (100%/5) */
-        box-sizing: border-box;
-    }
-
-    .carousel-item img {
-        width: auto;
-        max-width: 150%;
-        height: 100px;
-        display: block;
-        margin: 0 auto;
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-    }
-
-    .carousel-item:hover img {
-        filter: grayscale(0%);
-    }
-
-    @keyframes carousel-scroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
-    }
-
-    @media (max-width: 768px) {
-        .carousel-item {
-            width: calc(10% - 5px);
-        }
-
-        @keyframes carousel-scroll {
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    }
-</style>

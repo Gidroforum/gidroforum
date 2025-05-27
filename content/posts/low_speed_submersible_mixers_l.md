@@ -10,7 +10,7 @@ theme: 'light'
 
 # Низкооборотная погружная мешалка Liancheng
 
-![Низкооборотная погружная мешалка Lianchen(/images/low_speed_submersible_mixers_liancheng.png)
+![Низкооборотная погружная мешалка Lianchen](/images/low_speed_submersible_mixers_liancheng.png)
 
 ## Введение
 

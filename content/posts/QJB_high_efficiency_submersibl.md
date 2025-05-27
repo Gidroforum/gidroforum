@@ -7,6 +7,7 @@ cover: '/images/QJB_high_efficiency_submersible_mixers.png'
 tags: ["SL PUMP", "погружные мешалки"]
 theme: 'light'
 ---
+
 # QJB - Высокооборотная погружная мешалка от Liancheng
 
 ![Высокооборотная погружная мешалка QJB](/images/QJB_high_efficiency_submersible_mixers.png)

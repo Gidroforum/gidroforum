@@ -1,22 +1,19 @@
-<div class="slider-page">
-    <!-- Слайды -->
-    <div class="slider-container">
+<div class="slider-container">
+    <div class="slider-wrapper">
         <div class="slide active">
-            <img src="/slider/slide1.png" alt="Гидрофорум" />
+            <img src="/images/slide1.jpg" alt="Slide 1" />
         </div>
         <div class="slide">
-            <img src="/slider/slide2.png" alt="Гидрофорум" />
+            <img src="/images/slide2.jpg" alt="Slide 2" />
         </div>
         <div class="slide">
-            <img src="/slider/slide3.png" alt="Гидрофорум" />
+            <img src="/images/slide3.jpg" alt="Slide 3" />
         </div>
     </div>
 
-    <!-- Кнопки управления -->
-    <!-- -- <button class="<<">❮</button>
-    <button class=">>">❯</button>-->
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
 
-    <!-- Точки-индикаторы -->
     <div class="dots">
         <span class="dot active" onclick="currentSlide(0)"></span>
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -25,34 +22,33 @@
 </div>
 
 <style>
-    /* Стили остаются такими же как в предыдущей версии */
-    .simple-slider {
+    .slider-container {
         position: relative;
         max-width: 1000px;
-        margin: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
     }
 
     .slide {
-        display: none;
+        min-width: 100%;
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
 
     .slide.active {
-        display: block;
-        animation: fade 1.5s;
-    }
-
-    @keyframes fade {
-        from {
-            opacity: 0.4;
-        }
-        to {
-            opacity: 1;
-        }
+        opacity: 1;
     }
 
     img {
         width: 100%;
         height: auto;
+        display: block;
     }
 
     .prev,
@@ -64,67 +60,94 @@
         color: white;
         font-size: 20px;
         border: none;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.5);
         cursor: pointer;
+        z-index: 2;
     }
 
+    .prev {
+        left: 0;
+    }
     .next {
         right: 0;
     }
 
     .dots {
-        text-align: center;
-        padding: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
     }
 
     .dot {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        margin: 0 5px;
+        width: 12px;
+        height: 12px;
         border-radius: 50%;
-        background: #ddd;
+        background: rgba(255, 255, 255, 0.5);
         cursor: pointer;
+        transition: background 0.3s ease;
     }
 
     .dot.active {
-        background: #666;
+        background: rgba(255, 255, 255, 0.9);
     }
 </style>
 
 <script>
     let slideIndex = 0;
-    const slides = document.getElementsByClassName("slide");
-    const dots = document.getElementsByClassName("dot");
+    let autoSlideInterval;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    const wrapper = document.querySelector(".slider-wrapper");
 
-    function showSlides(n) {
-        // Корректировка индекса для циклического переключения
-        if (n >= slides.length) slideIndex = 0;
-        if (n < 0) slideIndex = slides.length - 1;
-
-        // Скрыть все слайды
-        Array.from(slides).forEach((slide) => slide.classList.remove("active"));
-
-        // Убрать активные точки
-        Array.from(dots).forEach((dot) => dot.classList.remove("active"));
-
-        // Показать текущий слайд и активировать точку
-        slides[slideIndex].classList.add("active");
-        dots[slideIndex].classList.add("active");
+    // Автопрокрутка
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            slideIndex = (slideIndex + 1) % slides.length;
+            updateSlider();
+        }, 5000);
     }
 
-    // Обработчики кнопок
+    function updateSlider() {
+        // Обновление слайдов
+        slides.forEach((slide, index) => {
+            slide.classList.toggle("active", index === slideIndex);
+        });
+
+        // Обновление точек
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === slideIndex);
+        });
+
+        // Анимация скольжения
+        wrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }
+
+    // Ручное управление
     document.querySelector(".prev").addEventListener("click", () => {
-        showSlides(--slideIndex);
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        clearInterval(autoSlideInterval);
+        updateSlider();
+        startAutoSlide();
     });
 
     document.querySelector(".next").addEventListener("click", () => {
-        showSlides(++slideIndex);
+        slideIndex = (slideIndex + 1) % slides.length;
+        clearInterval(autoSlideInterval);
+        updateSlider();
+        startAutoSlide();
     });
 
-    // Функция для переключения по точкам
+    // Переключение по точкам
     function currentSlide(n) {
         slideIndex = n;
-        showSlides(slideIndex);
+        clearInterval(autoSlideInterval);
+        updateSlider();
+        startAutoSlide();
     }
+
+    // Инициализация
+    startAutoSlide();
 </script>

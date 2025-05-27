@@ -69,15 +69,15 @@
 
     .carousel-item {
         flex: 0 0 auto;
-        padding: 0 15px;
+        padding: 0 5px;
         transition: transform 0.3s ease;
-        width: calc(10% - 10px); /* 5 элементов (100%/5) */
+        width: calc(10% - 5px); /* 5 элементов (100%/5) */
         box-sizing: border-box;
     }
 
     .carousel-item img {
         width: auto;
-        max-width: 100%;
+        max-width: 150%;
         height: 100px;
         display: block;
         margin: 0 auto;
@@ -100,7 +100,7 @@
 
     @media (max-width: 768px) {
         .carousel-item {
-            width: calc(25% - 30px);
+            width: calc(10% - 5px);
         }
 
         @keyframes carousel-scroll {

@@ -4,7 +4,7 @@ date: '2025-04-12'
 description: 'Подробный обзор модельного ряда, технических характеристик и применения насосов Slow Rotary Pumps в различных отраслях.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/slow_rotary_pump_models.png'
-tags: ["SL", "PUMP"]
+tags: ["SL PUMP"]
 theme: 'light'
 ---
 

@@ -1,11 +1,15 @@
 <div class="slider-page">
     <!-- Слайды -->
     <div class="slider-container">
-        {{ range $index, $element := .Params.slides }}
-        <div class="slide {{ if eq $index 0 }}active{{ end }}">
-            <img src="{{ .image }}" alt="Slide {{ add $index 1 }}" />
+        <div class="slide active">
+            <img src="/slider/slide1.jpg" alt="Slide 1" />
         </div>
-        {{ end }}
+        <div class="slide">
+            <img src="/slider/slide2.jpg" alt="Slide 2" />
+        </div>
+        <div class="slide">
+            <img src="/slider/slide3.jpg" alt="Slide 3" />
+        </div>
     </div>
 
     <!-- Кнопки управления -->
@@ -14,16 +18,14 @@
 
     <!-- Точки-индикаторы -->
     <div class="dots">
-        {{ range $index, $element := .Params.slides }}
-        <span
-            class="dot {{ if eq $index 0 }}active{{ end }}"
-            onclick="currentSlide({{ $index }})"
-        ></span>
-        {{ end }}
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
     </div>
 </div>
 
 <style>
+    /* Стили остаются такими же как в предыдущей версии */
     .simple-slider {
         position: relative;
         max-width: 1000px;
@@ -53,7 +55,6 @@
         height: auto;
     }
 
-    /* Кнопки */
     .prev,
     .next {
         position: absolute;
@@ -71,7 +72,6 @@
         right: 0;
     }
 
-    /* Точки */
     .dots {
         text-align: center;
         padding: 20px;
@@ -94,30 +94,37 @@
 
 <script>
     let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
 
     function showSlides(n) {
-        const slides = document.getElementsByClassName("slide");
-        const dots = document.getElementsByClassName("dot");
-
+        // Корректировка индекса для циклического переключения
         if (n >= slides.length) slideIndex = 0;
         if (n < 0) slideIndex = slides.length - 1;
 
+        // Скрыть все слайды
         Array.from(slides).forEach((slide) => slide.classList.remove("active"));
+
+        // Убрать активные точки
         Array.from(dots).forEach((dot) => dot.classList.remove("active"));
 
+        // Показать текущий слайд и активировать точку
         slides[slideIndex].classList.add("active");
         dots[slideIndex].classList.add("active");
     }
 
+    // Обработчики кнопок
     document.querySelector(".prev").addEventListener("click", () => {
-        showSlides((slideIndex -= 1));
+        showSlides(--slideIndex);
     });
 
     document.querySelector(".next").addEventListener("click", () => {
-        showSlides((slideIndex += 1));
+        showSlides(++slideIndex);
     });
 
+    // Функция для переключения по точкам
     function currentSlide(n) {
-        showSlides((slideIndex = n));
+        slideIndex = n;
+        showSlides(slideIndex);
     }
 </script>

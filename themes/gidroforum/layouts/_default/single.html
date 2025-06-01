@@ -62,7 +62,7 @@
           </div>
           {{- if and $notPlainPage site.Params.ShowCopyRight -}}
           <div class="component">
-            <div class="component-content">
+            <!--<div class="component-content">
               <div class="article-copyright">
                 <p class="content">
                   {{ i18n "copyright" }}: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">{{ i18n "licenses" }}</a>
@@ -70,7 +70,7 @@
                 <p class="content">{{ i18n "author"}}:  {{ .Page.Params.author }} </p>
                 <p class="content">{{ i18n "postDate"}}:  {{ .Page.Params.Date | time.Format ":date_long" }}</p>
               </div>
-            </div>
+              </div>-->
           </div>
           {{- end -}}
         </article>
@@ -80,12 +80,11 @@
   <script>
     var script = document.createElement("script");
     {{- $js := resources.Get "js/initPost.js" -}}
-    {{- $opts := dict 
-      "params" (dict "baseURL" site.BaseURL) 
+    {{- $opts := dict
+      "params" (dict "baseURL" site.BaseURL)
     -}}
     {{- $js = $js | js.Build $opts -}}
     script.src = {{ $js.Permalink }};
     document.head.appendChild(script);
   </script>
 {{ end }}
-

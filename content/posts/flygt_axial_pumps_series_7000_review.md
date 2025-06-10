@@ -1,4 +1,4 @@
-|
+---
 title: 'Осевые насосы Flygt Серия 7000: Обзор и применение'
 date: '2023-10-15T14:30:00+03:00'
 description: 'Подробный обзор осевых насосов Flygt Серии 7000, их характеристик, моделей и областей применения. Купить в Москве.'
@@ -6,7 +6,7 @@ author: 'Gidroforum'
 cover: '/images/flygt_axial_pumps_series_7000_review.webp'
 tags: ["Flygt"]
 theme: 'light'
-
+---
 # Осевые насосы Flygt Серия 7000
 
 ![Изображение статьи](/images/flygt_axial_pumps_series_7000_review.webp)

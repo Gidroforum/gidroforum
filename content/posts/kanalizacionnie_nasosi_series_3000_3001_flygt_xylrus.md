@@ -1,4 +1,4 @@
-|
+---
 title: 'Купить канализационные насосы серии 3000/3001 Flygt от «Ксайлрус»'
 date: '2025-03-01T13:06:38+03:00'
 description: 'Ознакомьтесь с характеристиками и преимуществами канализационных насосов серии 3000/3001 Flygt от компании «Ксайлрус».'
@@ -6,7 +6,7 @@ author: 'Gidroforum'
 cover: '/images/kanalizacionnie_nasosi_series_3000_3001_flygt_xylrus.png.webp'
 tags: ["Flygt"]
 theme: 'light'
-
+---
 ## Канализационные насосы серии 3000/3001 Flygt
 
 ![Изображение статьи](/images/kanalizacionnie_nasosi_series_3000_3001_flygt_xylrus.webp)

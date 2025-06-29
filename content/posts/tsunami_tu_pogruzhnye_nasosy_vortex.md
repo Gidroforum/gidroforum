@@ -3,13 +3,13 @@ title: 'Tsunami TU Погружной канализационный насос 
 date: '2025-06-10'
 description: 'Откройте для себя Tsunami TU — надежные погружные канализационные насосы с вихревым рабочим колесом Vortex, идеально подходящие для перекачивания стоков в промышленности и коммунальном хозяйстве.'
 author: 'Gidroforum'
-cover: '/images/tsunami_tu_pogruzhnye_nasosy_vortex.png'
+cover: '/images/tsunami_tu_pogruzhnye_nasosy_vortex.jpg'
 tags: ["Tsunami", "Насосы"]
 theme: 'light'
 ---
 # Tsunami TU Погружной канализационный насос с вихревым рабочим колесом Vortex
 
-![Изображение статьи](/images/tsunami_tu_pogruzhnye_nasosy_vortex.94754605)
+![Изображение статьи](/images/tsunami_tu_pogruzhnye_nasosy_vortex.jpg)
 
 ## Введение
 

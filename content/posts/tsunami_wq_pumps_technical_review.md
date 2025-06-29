@@ -3,7 +3,7 @@ title: 'Погружные насосы Tsunami WQ: технический об�
 date: '2025-06-10'
 description: 'Подробный обзор характеристик, установки и применения погружных насосов серии Tsunami WQ для откачки сточных вод.'
 author: 'Gidroforum'
-cover: '/images/tsunami_wq_pumps_technical_review.png'
+cover: '/images/tsunami_wq_pumps_technical_review.jpg'
 tags: [Tsunami, Насосы]
 theme: 'light'
 ---

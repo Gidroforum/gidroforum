@@ -3,14 +3,14 @@ title: 'Tsunami GNWQ: Промышленные насосы для всех ви
 date: '2025-06-10'
 description: 'Обзор характеристик, модельного ряда и областей применения промышленных насосов Tsunami GNWQ для различных типов дренажей.'
 author: 'ГИДРОФОРУМ'
-cover: '/images/tsunami_gnwq_industrial_pumps_review.png'
+cover: '/images/tsunami_gnwq_industrial_pumps_review.jpg'
 tags: ['Tsunami', 'Насосы']
 theme: 'light'
 ---
 
 # Tsunami GNWQ: Промышленные насосы для всех видов дренажей
 
-![Изображение статьи](/images/tsunami_gnwq_industrial_pumps_review.94754605)
+![Изображение статьи](/images/tsunami_gnwq_industrial_pumps_review.jpg)
 
 Tsunami GNWQ представляет собой линейку промышленных насосов, предназначенных для различных типов дренажных систем. Эти насосы идеально подходят для перекачки стоков, содержащих мягкие волокна, и могут использоваться в различных отраслях.
 

@@ -3,7 +3,7 @@ title: 'Tsunami B — Фекальные насосы в наличии: Обз�
 date: '2025-06-10'
 description: 'Узнайте о характеристиках, моделях и областях применения фекальных насосов Tsunami B. Оптимальное решение для канализационных систем.'
 author: 'Gidroforum'
-cover: '/images/tsunami_b_fecal_pumps.png'
+cover: '/images/tsunami_b_fecal_pumps_availability_and_applications.jpg'
 tags: ['Tsunami', 'Насосы']
 theme: 'light'
 ---

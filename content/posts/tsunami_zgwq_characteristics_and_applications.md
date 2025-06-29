@@ -3,13 +3,13 @@ title: 'Tsunami ZGWQ: Погружные канализационные насо
 date: '2025-06-10'
 description: 'Обзор характеристик, применения и особенностей погружных канализационных насосов Tsunami ZGWQ для промышленных и коммунальных нужд.'
 author: 'Gidroforum'
-cover: '/images/tsunami_zgwq_characteristics_and_applications.png'
+cover: '/images/tsunami_zgwq_characteristics_and_applications.jpg'
 tags: ["Tsunami", "Насосы"]
 theme: 'light'
 ---
 # Tsunami ZGWQ: Погружные канализационные насосы с острыми лезвиями
 
-![Изображение статьи](/images/tsunami_zgwq_characteristics_and_applications.94754605)
+![Изображение статьи](/images/tsunami_zgwq_characteristics_and_applications.jpg)
 
 Tsunami ZGWQ — это погружные канализационные насосы, предназначенные для откачки общегородских, промышленных стоков и стоков текстильной отрасли. Эти насосы оснащены острыми лезвиями, которые эффективно измельчают длинноволокнистые отходы.
 

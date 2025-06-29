@@ -3,14 +3,14 @@ title: 'Tsunami AS-WQ погружные насосы: технические х
 date: '2025-06-10'
 description: 'Полный обзор технических характеристик, модельного ряда и областей применения погружных насосов Tsunami AS-WQ для сточных вод.'
 author: 'Gidroforum'
-cover: '/images/tsunami_as_wq_submersible_pump_technical_review.png'
+cover: '/images/tsunami_as_wq_submersible_pump_technical_review.jpg'
 tags: [Tsunami, Насосы]
 theme: 'light'
 ---
 
 # Tsunami AS-WQ погружные насосы: технические характеристики и применение
 
-![Изображение статьи](/images/tsunami_as_wq_submersible_pump_technical_review.94754605)
+![Изображение статьи](/images/tsunami_as_wq_submersible_pump_technical_review.jpg)
 
 Погружной насос Tsunami AS-WQ предназначен для перекачивания сточных вод, содержащих твердые частицы и волокнистые вещества. Этот насос оснащен спиральным режущим рабочим колесом, что позволяет эффективно разрывать длинные волокнистые частицы, такие как мешки, ремни, трава и ткань.
 

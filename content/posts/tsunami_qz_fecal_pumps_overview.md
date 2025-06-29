@@ -1,6 +1,6 @@
 ---
 title: 'Tsunami QZ: Фекальные насосы для эффективной транспортировки сточных вод'
-date: '2025-05-05T14:30:00+03:00'
+date: '2025-06-10'
 description: 'Обзор характеристик, применения и преимуществ фекальных насосов Tsunami QZ. Оптимальное решение для канализационных систем.'
 author: 'Gidroforum'
 cover: '/images/tsunami_qz_fecal_pumps_overview.png'

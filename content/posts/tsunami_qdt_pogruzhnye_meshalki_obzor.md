@@ -1,6 +1,6 @@
 ---
 title: 'Tsunami QDT: Полное руководство по низкоскоростным погружным мешалкам'
-date: '2025-06-15T14:30:00+03:00'
+date: '2025-06-10'
 description: 'Подробный обзор особенностей, применения и установки низкоскоростных погружных мешалок Tsunami QDT для промышленных и городских очистных сооружений.'
 author: 'Gidroforum'
 cover: '/images/tsunami_qdt_pogruzhnye_meshalki_obzor.png'

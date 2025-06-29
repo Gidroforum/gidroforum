@@ -1,6 +1,6 @@
 ---
 title: 'Tsunami QH — Фекальные насосы: Обзор и Применение'
-date: '2025-05-05T14:30:00+03:00'
+date: '2025-06-10'
 description: 'Подробный обзор фекальных насосов Tsunami QH, их технические характеристики, преимущества и области применения.'
 author: 'Gidroforum'
 cover: '/images/tsunami_qh_sewage_pumps_application_and_features.png'

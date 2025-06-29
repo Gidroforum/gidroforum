@@ -1,6 +1,6 @@
 ---
 title: 'Tsunami QK-TB Поверхностный Аэратор: Обзор и Применение'
-date: '2025-06-05T14:30:00+03:00'
+date: '2025-06-10'
 description: 'Подробное руководство по Tsunami QK-TB Поверхностному Аэратору, его техническим характеристикам, преимуществам и области применения.'
 author: 'Gidroforum'
 cover: '/images/tsunami_qk_tb_surface_aerator_guide.png'

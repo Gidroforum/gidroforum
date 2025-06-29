@@ -1,6 +1,6 @@
 ---
 title: 'Tsunami WL: Технические характеристики и применение канализационных насосов'
-date: '2023-10-05T14:30:00+03:00'
+date: '2025-05-05T14:30:00+03:00'
 description: 'Полное руководство по техническим характеристикам, моделям и областям применения вертикальных канализационных насосов Tsunami WL'
 author: 'Gidroforum'
 cover: '/images/tsunami_wl_pumps_technical_specs_and_applications.png'

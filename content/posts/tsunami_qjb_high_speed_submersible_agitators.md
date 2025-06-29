@@ -1,6 +1,6 @@
 ---
 title: 'Tsunami QJB: Высокоскоростные погружные мешалки для перемешивания жидкостей'
-date: '2025-06-10'
+date: '2025-01-10'
 description: 'Подробное описание высокоскоростных погружных мешалок Tsunami QJB, их характеристики, применение и особенности.'
 author: 'Gidroforum'
 cover: '/images/tsunami_qjb_high_speed_submersible_agitators.jpg'

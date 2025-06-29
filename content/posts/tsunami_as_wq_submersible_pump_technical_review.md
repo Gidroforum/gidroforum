@@ -1,6 +1,6 @@
 ---
 title: 'Tsunami AS-WQ погружные насосы: технические характеристики и применение'
-date: '2025-06-10'
+date: '2025-01-10'
 description: 'Полный обзор технических характеристик, модельного ряда и областей применения погружных насосов Tsunami AS-WQ для сточных вод.'
 author: 'Gidroforum'
 cover: '/images/tsunami_as_wq_submersible_pump_technical_review.jpg'

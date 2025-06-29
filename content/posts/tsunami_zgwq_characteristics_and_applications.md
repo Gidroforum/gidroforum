@@ -1,6 +1,6 @@
 ---
 title: 'Tsunami ZGWQ: Погружные канализационные насосы с острыми лезвиями'
-date: '2025-06-10'
+date: '2025-01-10'
 description: 'Обзор характеристик, применения и особенностей погружных канализационных насосов Tsunami ZGWQ для промышленных и коммунальных нужд.'
 author: 'Gidroforum'
 cover: '/images/tsunami_zgwq_characteristics_and_applications.jpg'

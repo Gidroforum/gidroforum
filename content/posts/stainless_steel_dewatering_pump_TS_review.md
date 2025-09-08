@@ -1,11 +1,12 @@
-|
+___
 title: 'Дренажный насос Solidpump TS из нержавеющей стали: технический обзор'
-date: '2023-10-05T13:06:38+08:00'
+date: '2025-01-08'
 description: 'Подробное описание и характеристики дренажных насосов серии TS для перекачки химически агрессивных жидкостей.'
 author: 'Gidroforum'
 cover: '/images/stainless_steel_dewatering_pump_TS_review.png'
 tags: ["Solidpump", "Насосы"]
 theme: 'light'
+---
 
 # Дренажный насос Solidpump TS из нержавеющей стали: технический обзор
 

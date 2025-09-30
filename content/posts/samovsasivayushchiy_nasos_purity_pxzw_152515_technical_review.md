@@ -1,4 +1,4 @@
-|
+---
 title: 'Самовсасывающий насос PURITY PXZW 15-25-1.5 для загрязненной воды - технический обзор'
 date: '01-03-2025'
 description: 'Технические характеристики и применение самовсасывающего насоса PURITY PXZW 15-25-1.5 для загрязненной воды.'
@@ -6,7 +6,7 @@ author: 'Gidroforum'
 cover: '/images/samovsasivayushchiy_nasos_purity_pxzw_152515_technical_review.png'
 tags: ["Purity", "PXZW Purity", "Поверхностные моноблочные самовсасывающие насосы"]
 theme: 'light'
-
+---
 ![Изображение статьи](/images/samovsasivayushchiy_nasos_purity_pxzw_152515_technical_review.png)
 
 ## Применение и особенности

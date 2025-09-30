@@ -11,7 +11,7 @@ pagerSize = 5
 [params]
   defaultCover = '/images/logo_site.png'
   email = '001@armarost.ru'
-  phone = '+7 (989) 610-02-04'
+  phone = '+79896100204'
   adress = 'Ростов-на-Дону, ул. Вавилова, 62В'
   [[params.socialMedia]]
     name = 'ГИДРОФОРУМ'

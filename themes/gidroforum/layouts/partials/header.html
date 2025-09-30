@@ -4,12 +4,12 @@
       <div class="nav-content">
         <a href="{{ "" | relURL }} " class="nav-title"><!--<img src="/firms/logo.png" height="27px"/>&nbsp;-->{{ .Site.Title }}</a>&nbsp;&nbsp;
         <div class="nav-menu">
-         
+
           <div class="nav-item-wrapper">
             <a href="{{ "posts" | relURL }} " class="nav-item-content">Статьи</a>
           </div>
           <div class="nav-item-wrapper">
-            <a href="{{ "tags" | relURL }} " class="nav-item-content">Категории</a>
+            <a href="{{ "tags" | relURL }} " class="nav-item-content">Каталог</a>
           </div>
           {{- if .Site.GetPage "about" -}}
           <div class="nav-item-wrapper">

@@ -1,6 +1,6 @@
 ---
 title: 'CMC-MX-XZ: Устройство плавного пуска от Aikon для надежной работы электродвигателей'
-date: '01-10-2023'
+date: '2025-10-01T13:06:38+08:00'
 description: 'Обзор устройства плавного пуска CMC-MX-XZ от компании Aikon, его технические характеристики, преимущества и области применения.'
 author: 'Gidroforum'
 cover: '/images/aikon_cmc_mx_xz_soft_starter_device.png'

@@ -1,6 +1,6 @@
 ---
 title: 'CDLK и CDLKF: многоступенчатые погружные насосы для промышленных нужд'
-date: '2023-10-15'
+date: '2025-10-01T13:06:38+08:00'
 description: 'Полный обзор технических характеристик, применения и конструкции многоступенчатых погружных насосов CDLK и CDLKF от CNP Aikon.'
 author: 'Gidroforum'
 cover: '/images/CDLK_CDLKF_pump_technical_review.png'

@@ -1,6 +1,6 @@
 ---
 title: 'Установки повышения давления PBS: Обзор и применение'
-date: '10-10-2023'
+date: '2025-10-01T13:06:38+08:00'
 description: 'Полное руководство по установкам повышения давления PBS, их характеристикам, преимуществам и областям применения.'
 author: 'Gidroforum'
 cover: '/images/pbs_pressure_boosting_systems_overview.png'

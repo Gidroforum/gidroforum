@@ -1,6 +1,6 @@
 ---
 title: 'Высокоскоростные погружные мешалки QJB: применение и особенности'
-date: '01-10-2023'
+date: '2025-10-01T13:06:38+08:00'
 description: 'Обзор высокоскоростных погружных мешалок QJB, их технические характеристики, области применения и преимущества в очистке воды.'
 author: 'Gidroforum'
 cover: '/images/qjb_high_speed_submersible_mixers_applications_and_features.png'

@@ -1,6 +1,6 @@
 ---
 title: 'Установки пожаротушения PFFS: технический обзор и применение'
-date: '10-10-2023'
+date: '2025-10-01T13:06:38+08:00'
 description: 'Полный обзор характеристик, модельного ряда и областей применения установок пожаротушения PFFS на базе насосов CDM.'
 author: 'Gidroforum'
 cover: '/images/pffs_fire_suppression_system_technical_review.png'

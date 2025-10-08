@@ -1,6 +1,6 @@
 ---
 title: 'Щит управления ЩУН-PDES от CNP Aikon: описание, характеристики и применение'
-date: '2023-10-05'
+date: '2025-10-01T13:06:38+08:00'
 description: 'Узнайте все о щите управления ЩУН-PDES от CNP Aikon: его предназначение, технические характеристики, области применения и преимущества.'
 author: 'Gidroforum'
 cover: '/images/schit_upravleniya_shun_pdes_cnp_aikon_description.png'

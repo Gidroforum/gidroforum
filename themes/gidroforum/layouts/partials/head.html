@@ -26,7 +26,7 @@
     <!-- custom style files -->
     {{ range site.Params.css }}
     <link rel="stylesheet" href="{{ .url | relURL }}" />
-    <script src="//code.jivo.ru/widget/tYE2ejZvjE" async></script>
+    <script src="{{ "//code.jivo.ru/widget/tYE2ejZvjE" async | relURL }}"></script>
     {{ end }}
 
 </head>

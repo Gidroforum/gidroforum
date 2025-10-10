@@ -4,7 +4,7 @@ date: '2025-03-01'
 description: 'Купить моноблочный центробежный насос EBK бренда Aquastrong в Москве, Московской области или с доставкой в другие регионы. Обзор характеристик и областей применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_ebk_pump_moscow.png'
-tags: ['Aquastrong', 'насосы']
+tags: ['Aquastrong']
 theme: 'light'
 ---
 

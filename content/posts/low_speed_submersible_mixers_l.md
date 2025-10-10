@@ -4,7 +4,7 @@ date: '2025-04-12'
 description: 'Подробный обзор низкооборотной погружной мешалки от Liancheng, ее технических характеристик, областей применения и преимуществ для различных отраслей.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/low_speed_submersible_mixers_liancheng.png'
-tags: ["SL PUMP", "низкооборотная погружная мешалка"]
+tags: ["SL PUMP", "Погружная мешалка"]
 theme: 'light'
 ---
 

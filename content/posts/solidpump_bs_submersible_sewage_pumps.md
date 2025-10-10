@@ -1,6 +1,6 @@
 ---
 title: 'Канальное рабочее колесо Solidpump BS для сточных вод'
-date: '2025-10-05'
+date: '2025-10-01T13:06:38+08:00'
 description: 'Технический обзор и характеристики канализационных насосов с рабочим колесом канального типа BS от Solidpump.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_bs_submersible_sewage_pumps.png'

@@ -1,6 +1,6 @@
 ---
 title: 'Канализационные насосы с рабочим колесом канального типа BS'
-date: '2025-10-01'
+date: '2025-10-01T13:06:38+08:00'
 description: 'Базовая линейка погружных насосов для сточных вод и канализации от Solidpump с рабочим колесом канального типа.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/submersible_sewage_pumps_with_canal_type_impeller.png'

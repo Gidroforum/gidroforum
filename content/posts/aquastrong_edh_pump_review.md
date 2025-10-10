@@ -4,7 +4,7 @@ date: '2025-10-15'
 description: 'Полное руководство по характеристикам, преимуществам и областям применения горизонтального многоступенчатого насоса EDH бренда Aquastrong.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_edh_pump_review.png'
-tags: ['Aquastrong'
+tags: ['Aquastrong']
 theme: 'light'
 
 ---

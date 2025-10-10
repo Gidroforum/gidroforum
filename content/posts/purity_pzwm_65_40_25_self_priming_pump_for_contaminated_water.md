@@ -1,6 +1,6 @@
 ---
 title: 'Самовсасывающий насос для загрязненной воды PURITY PZWM 65-40-25/2: надежность и эффективность'
-date: '2023-10-15'
+date: '2025-10-05'
 description: 'Самовсасывающие насосы PURITY PZWM 65-40-25/2 для загрязненной воды: преимущества, области применения и особенности использования.'
 author: 'Gidroforum'
 cover: '/images/purity_pzwm_65_40_25_self_priming_pump_for_contaminated_water.png'

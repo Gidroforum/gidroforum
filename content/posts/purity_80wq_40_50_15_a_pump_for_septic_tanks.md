@@ -1,7 +1,7 @@
 ```markdown
 ---
 title: 'Насос погружной канализационный PURITY 80WQ 40-50-15 A для септиков'
-date: '2023-10-01'
+date: '2025-10-01'
 description: 'Погружной насос канализационный PURITY 80WQ 40-50-15 A - надежное решение для перекачивания сточных вод в частных домах и на промышленных объектах.'
 author: 'Gidroforum'
 cover: '/images/purity_80wq_40_50_15_a_pump_for_septic_tanks.png'

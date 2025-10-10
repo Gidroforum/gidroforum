@@ -1,6 +1,6 @@
 ---
 title: 'Насосный агрегат моноблочный фланцевый PURITY PSTG 125-250/900 (N) - обзор и преимущества'
-date: '2023-10-05'
+date: '2025-10-05'
 description: 'Узнайте больше о насосном агрегате моноблочном фланцевом PURITY PSTG 125-250/900 (N): его особенности, преимущества и области применения.'
 author: 'Gidroforum'
 cover: '/images/purity_pstg_125_250_900_n_monoblock_pump_aggregate.png'

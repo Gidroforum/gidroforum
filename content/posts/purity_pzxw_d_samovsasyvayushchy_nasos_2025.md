@@ -1,6 +1,6 @@
 ---
 title: 'Самовсасывающий насос для загрязненной воды PURITY PXZW(D) 15-25-1.5'
-date: '2025-10-15'
+date: '2025-10-05'
 description: 'Узнайте, как самовсасывающие насосы для загрязненной воды PURITY PXZW(D) обеспечивают надежную работу в сложных условиях.'
 author: 'Gidroforum'
 cover: '/images/purity_pzxw_d_samovsasyvayushchy_nasos_2025.png'

@@ -1,6 +1,6 @@
 ---
 title: 'Циркуляционный насос In-Line PURITY PT 80-330/92 (N): купить в России'
-date: '2025-10-04T16:12:38+03:00'
+date: '2025-10-04'
 description: 'Ознакомьтесь с преимуществами и особенностями применения циркуляционного насоса In-Line PURITY PT 80-330/92 (N). Купить в России.'
 author: 'Gidroforum'
 cover: '/images/in_line_purity_pt_80_330_92_n_pump_overview.png'

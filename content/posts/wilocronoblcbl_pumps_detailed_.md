@@ -4,7 +4,7 @@ date: '2023-10-01'
 description: 'Подробный обзор насосов Wilo-CronoBloc-BL с сухим ротором, их характеристик, преимуществ и областей применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/wilocronoblcbl_pumps_detailed_review.png'
-tags: ["WILO", "насосы"]
+tags: ["WILO"]
 theme: 'light'
 ---
 

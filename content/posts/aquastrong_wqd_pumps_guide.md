@@ -4,7 +4,7 @@ date: '2025-04-03'
 description: 'Подробное руководство по канализационным насосам WQ(D) от Aquastrong. Характеристики, преимущества, области применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_wqd_pumps_guide.png'
-tags: ["Aquastrong", "канализационные насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

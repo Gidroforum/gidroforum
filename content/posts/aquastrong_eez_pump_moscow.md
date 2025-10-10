@@ -4,7 +4,7 @@ date: '2025-03-05'
 description: 'Полное руководство по покупке и применению моноблочного центробежного насоса EEZ бренда Aquastrong. Доставка по всей России.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_eez_pump_moscow.png'
-tags: ["Aquastrong", "насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

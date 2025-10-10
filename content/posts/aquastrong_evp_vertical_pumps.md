@@ -4,7 +4,7 @@ date: '2023-10-15'
 description: 'Ознакомьтесь с характеристиками, преимуществами и областями применения вертикального многоступенчатого насоса EVP бренда Aquastrong. Узнайте, где купить в Москве, Московской области и других регионах.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_evp_vertical_pumps.png'
-tags: ["Aquastrong", "насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

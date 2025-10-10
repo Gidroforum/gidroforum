@@ -4,7 +4,7 @@ date: '2023-10-05'
 description: 'Полное руководство по одноступенчатому центробежному насосу Wilo-Atmos GIGA-N, его техническим характеристикам, преимуществам и областям применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/wilo_atmos_giga_n_pump_review.png'
-tags: ['WILO', 'насосы']
+tags: ['WILO']
 theme: 'light'
 ---
 

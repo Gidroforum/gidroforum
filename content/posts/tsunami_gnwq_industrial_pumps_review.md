@@ -4,7 +4,7 @@ date: '2025-01-10'
 description: 'Обзор характеристик, модельного ряда и областей применения промышленных насосов Tsunami GNWQ для различных типов дренажей.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/tsunami_gnwq_industrial_pumps_review.jpg'
-tags: ['Tsunami', 'Насосы']
+tags: ['Tsunami']
 theme: 'light'
 ---
 

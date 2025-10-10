@@ -4,7 +4,7 @@ date: '2025-03-15T13:06:38+08:00'
 description: 'Подробный обзор преимуществ и характеристик автоматического погружного насоса с агитатором Solidpump TBDE.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/automatic_submersible_pump_solidpump_tbde_review.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

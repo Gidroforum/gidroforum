@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Обзор технических характеристик и областей применения погружных насосов BS от Solidpump для перекачивания сточных вод.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/submersible_sewage_pumps_technical_review.png'
-tags: ["Solidpump", "Канализационные насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2023-10-05T14:30:00+03:00'
 description: 'Описание, характеристики и преимущества погружных шламовых насосов Flygt Серия 5000. Оптимальные решения для перекачивания абразивных жидкостей.'
 author: 'Gidroforum'
 cover: '/images/flygt_submersible_slurry_pumps_series_5000.webp'
-tags: ["Flygt", "шламовые насосы"]
+tags: ["Flygt"]
 theme: 'light'
 ---
 # Погружные шламовые насосы Flygt Серия 5000

@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Продукт для перекачивания загрязненной воды с абразивными частицами, подходит для строительных площадок и водоемов.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/lightweight_submersible_drainage_pump_solidpump_tbl.jpg'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

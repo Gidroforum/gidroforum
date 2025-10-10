@@ -4,7 +4,7 @@ date: '2025-10-15'
 description: 'Обзор погружных электронасосов WQ для отвода сточных вод, их технические характеристики, области применения и преимущества.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/wq_submersible_pumps_for_wastewater_drainage.png'
-tags: ["насосы cnp", "сточные насосы"]
+tags: ["CNP"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2023-10-01'
 description: 'Полное руководство по покупке моноблочного центробежного насоса ESST бренда Aquastrong в Москве и других регионах России.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/buy_esst_aquastrong_pump_moscow.png'
-tags: ["Aquastrong", "насосы", "центробежные насосы", "ESST"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

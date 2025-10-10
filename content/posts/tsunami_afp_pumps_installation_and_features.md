@@ -4,7 +4,7 @@ date: '2025-01-10'
 description: 'Полное руководство по установке насосов Tsunami AFP, их техническим параметрам и преимуществам для перекачивания сточных вод.'
 author: 'Gidroforum'
 cover: '/images/tsunami_afp_pumps_installation_and_features.jpg'
-tags: ["Tsunami", "Насосы"]
+tags: ["Tsunami"]
 theme: 'light'
 ---
 

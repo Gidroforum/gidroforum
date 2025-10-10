@@ -4,7 +4,7 @@ date: '2025-04-10T13:06:38+08:00'
 description: 'Технический обзор и областей применения погружного насоса с агитатором Solidpump TBD для перекачивания суспензий.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_tbd_submersible_agitator_pump_purchase.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

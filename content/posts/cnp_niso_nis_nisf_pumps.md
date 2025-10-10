@@ -4,7 +4,7 @@ date: '2025-03-15'
 description: 'Обзор характеристик, технических особенностей и областей применения консольных и консольно-моноблочных насосов NISO, NIS, NISF от компании CNP.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/cnp_niso_nis_nisf_pumps.png'
-tags: ['насосы cnp']
+tags: ['CNP']
 theme: 'light'
 ---
 

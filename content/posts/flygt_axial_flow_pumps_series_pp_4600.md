@@ -4,7 +4,7 @@ date: '2023-10-15T10:00:00+03:00'
 description: 'Обзор характеристик, преимуществ и моделей пропеллерных насосов серии РР 4600 от Flygt для перемещения больших объемов воды.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/flygt_axial_flow_pumps_series_pp_4600.webp'
-tags: ["Flygt", "насосы"]
+tags: ["Flygt"]
 theme: 'light'
 ---
 # Пропеллерные насосы серии РР 4600 Flygt

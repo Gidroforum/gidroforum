@@ -4,7 +4,7 @@ date: '2025-02-15'
 description: 'Узнайте о технических характеристиках, преимуществах и областях применения горизонтального многоступенчатого насоса EMH бренда Aquastrong.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_horizontal_multistage_pump_emh.png'
-tags: ["Aquastrong", "насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

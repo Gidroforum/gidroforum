@@ -4,7 +4,7 @@ date: '2025-01-08'
 description: 'Подробный обзор переносного насоса с агитатором Solidpump PD(M), его технических характеристик, областей использования и особенностей.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/portable_agitator_pump_solidpump_pd_m_review.png'
-tags: ['Solidpump', 'Насосы']
+tags: ['Solidpump']
 theme: 'light'
 ---
 

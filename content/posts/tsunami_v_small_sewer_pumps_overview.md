@@ -4,7 +4,7 @@ date: '2025-01-10'
 description: 'Узнайте о Tsunami V — маленьких погружных канализационных насосах, их характеристиках и областях применения. Оптимизируйте работу вашей системы.'
 author: 'Gidroforum'
 cover: '/images/tsunami_v_small_sewer_pumps_overview.jpg'
-tags: [Tsunami, Насосы]
+tags: [Tsunami]
 theme: 'light'
 ---
 

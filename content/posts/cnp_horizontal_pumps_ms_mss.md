@@ -4,7 +4,7 @@ date: '2025-10-01'
 description: 'Подробное описание горизонтальных одноступенчатых насосов MS и MSS от компании CNP, их характеристики, области применения и преимущества.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/cnp_horizontal_pumps_ms_mss.png'
-tags: ['насосы cnp']
+tags: ['CNP']
 theme: 'light'
 ---
 

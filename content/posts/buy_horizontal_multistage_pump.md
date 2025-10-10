@@ -4,7 +4,7 @@ date: '2023-10-05'
 description: 'Обзор характеристик, преимуществ и областей применения горизонтальных многоступенчатых насосов серии ECHm от бренда Aquastrong.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/buy_horizontal_multistage_pump_echm_aquastrong.png'
-tags: ["Aquastrong", "насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

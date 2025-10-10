@@ -4,7 +4,7 @@ date: '2023-10-27'
 description: 'Полный обзор характеристик, модельного ряда и областей применения канализационных насосов US с вихревым рабочим колесом от Solidpump.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/submersible_sewage_pump_us_technical_review.png'
-tags: ["Solidpump", "канализационные насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2025-10-01T13:06:38+08:00'
 description: 'Обзор характеристик, применения и технических параметров химических насосов NIH для перекачивания агрессивных сред.'
 author: 'Gidroforum'
 cover: '/images/nih_chemical_pumps_for_harsh_conditions.png'
-tags: ["NIH", "химические насосы", "промышленные насосы"]
+tags: ["NIH"]
 theme: 'light'
 ---
 

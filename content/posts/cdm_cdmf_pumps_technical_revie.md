@@ -4,7 +4,7 @@ date: '2025-04-25'
 description: 'Подробное описание характеристик, применения и конструкции вертикальных многоступенчатых насосов CDM и CDMF. Оптимизированный обзор.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/cdm_cdmf_pumps_technical_review.png'
-tags: ["насосы cnp"]
+tags: ["CNP"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2025-01-08'
 description: 'Подробный обзор мешалок для перемешивания сточных вод с ключевыми характеристиками и областями применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/hsm_ensm_submersible_mixer_review.png'
-tags: ["Solidpump", "мешалки"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

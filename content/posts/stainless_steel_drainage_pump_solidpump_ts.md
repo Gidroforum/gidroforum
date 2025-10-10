@@ -4,7 +4,7 @@ date: '2023-10-19T15:37:46+08:00'
 description: 'Обзор модели дренажного насоса из нержавеющей стали Solidpump TS, его технических характеристик и областей применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/stainless_steel_drainage_pump_solidpump_ts.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

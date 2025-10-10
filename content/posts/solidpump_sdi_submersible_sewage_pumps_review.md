@@ -4,7 +4,7 @@ date: '2025-03-14T13:06:38+08:00'
 description: 'Полный обзор характеристик, модельного ряда и областей применения канализационных насосов Solidpump SDI для перекачивания сточных вод.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_sdi_submersible_sewage_pumps_review.png'
-tags: ["Solidpump", "Канализационные насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

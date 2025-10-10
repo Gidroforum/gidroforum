@@ -4,7 +4,7 @@ date: '2023-10-05T14:00:00+03:00'
 description: 'Полный технический обзор вихревых насосов ВК, ВКС и ВКО, их характеристики, применение и преимущества.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/vikhrevye_nasosy_vk_vks_vko_obzor_i_primenenie.png'
-tags: ["ЛИВГИДРОМАШ", "насосы вихревые"]
+tags: ["ЛИВГИДРОМАШ"]
 theme: 'light'
 ---
 

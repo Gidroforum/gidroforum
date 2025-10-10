@@ -4,7 +4,7 @@ date: '2023-10-05'
 description: 'Обзор погружного шламового/пескового насоса Solidpump TBN, его технических характеристик и областей применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/submerged_slurry_pump_with_agitator_tbn_review.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

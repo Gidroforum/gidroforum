@@ -4,7 +4,7 @@ date: '2025-03-15'
 description: 'Оптимальное решение для водоснабжения многоэтажных зданий, систем дистилляции и заводов по производству алкогольных напитков. Высокое качество и надежность.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_vertical_multistage_pump.png'
-tags: ["Aquastrong", "насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2025-01-10'
 description: 'Полное руководство по техническим характеристикам, моделям и областям применения вертикальных канализационных насосов Tsunami WL'
 author: 'Gidroforum'
 cover: '/images/tsunami_wl_pumps_technical_specs_and_applications.jpg'
-tags: ["Tsunami", "Насосы"]
+tags: ["Tsunami"]
 theme: 'light'
 ---
 

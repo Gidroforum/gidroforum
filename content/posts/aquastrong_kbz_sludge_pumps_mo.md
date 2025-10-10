@@ -4,7 +4,7 @@ date: '2025-03-05'
 description: 'Купить насосы для шлама KBZ от бренда Aquastrong в Москве, Московской области и с доставкой по России. Подробное описание, характеристики и области применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_kbz_sludge_pumps_moscow.png'
-tags: ["Aquastrong", "насосы для шлама", "KBZ"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

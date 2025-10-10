@@ -4,7 +4,7 @@ date: '2023-10-15'
 description: 'Подробный обзор вертикальных насосов трубного монтажа IN LINE EPP от бренда Aquastrong, их технические характеристики, области применения и преимущества.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/inline_vertical_pumps_aquastrong_epp.png'
-tags: [Aquastrong]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

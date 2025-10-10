@@ -4,7 +4,7 @@ date: '2025-03-01'
 description: 'Описание, характеристики и преимущества канализационных насосов EDS от Aquastrong. Доставка по Москве, Московской области и другим регионам.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_eds_pump_moscow_region.png'
-tags: ['Aquastrong', 'канализационный насос']
+tags: ['Aquastrong']
 theme: 'light'
 ---
 

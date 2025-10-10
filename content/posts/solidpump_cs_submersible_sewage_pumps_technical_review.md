@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Подробный анализ характеристик и областей применения канализационных насосов с режущим рабочим колесом от Solidpump.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_cs_submersible_sewage_pumps_technical_review.png'
-tags: ["Solidpump", "Канализационные насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Обзор погружных шламовых насосов Solidpump TBS, их применения и технических характеристик для оптимальной перекачки жидкостей с твердыми включениями.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_tbs_submersible_sludge_pumps_for_sale.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

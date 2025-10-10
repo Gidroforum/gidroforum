@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Технический обзор канализационных насосов серии CS с режущим рабочим колесом для эффективной перекачки сточных вод.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/submersible_sewage_pump_cs_technical_review.png'
-tags: ["Solidpump", "Канализационные насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

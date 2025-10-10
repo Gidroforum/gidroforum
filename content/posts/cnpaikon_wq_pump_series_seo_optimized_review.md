@@ -4,7 +4,7 @@ date: '2025-10-01T13:06:38+08:00'
 description: 'Полный обзор характеристик, модельного ряда и областей применения погружных канализационных насосов серии WQ от CNP Aikon.'
 author: 'Gidroforum'
 cover: '/images/cnpaikon_wq_pump_series_seo_optimized_review.webp'
-tags: ["CNP", "насосы"]
+tags: ["CNP"]
 theme: 'light'
 ---
 

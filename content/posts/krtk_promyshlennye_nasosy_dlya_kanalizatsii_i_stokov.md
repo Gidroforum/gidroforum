@@ -4,7 +4,7 @@ date: '2023-10-15T14:30:00+03:00'
 description: 'Компания Tsunami предлагает высокопроизводительные насосы KRTK для перекачивания загрязненных сточных вод и жидкостей с твердыми включениями.'
 author: 'Gidroforum'
 cover: '/images/krtk_promyshlennye_nasosy_dlya_kanalizatsii_i_stokov.jpg'
-tags: ["Tsunami", "Насосы"]
+tags: ["Tsunami"]
 theme: 'light'
 ---
 

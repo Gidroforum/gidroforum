@@ -5,7 +5,7 @@ description: "Полное руководство по шкафам управл
 draft: false
 author: "arm"
 cover: '/images/shkaf_upr.png'
-tags: ["Шкафы управления","Промышленное оборудование"]
+tags: ["Шкафы управления"]
 theme: "light"
 ---
 

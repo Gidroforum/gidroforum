@@ -4,7 +4,7 @@ date: '2025-04-25'
 description: 'Подробный обзор циркуляционных насосов TD серии CNP, их технических характеристик, областей применения и преимуществ.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/td_circulation_pumps_inline_type_cnp.png'
-tags: ["насосы cnp", "циркуляционные насосы"]
+tags: ["CNP"]
 theme: 'light'
 ---
 

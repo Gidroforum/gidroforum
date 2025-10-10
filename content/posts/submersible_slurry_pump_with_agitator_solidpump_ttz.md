@@ -4,7 +4,7 @@ date: '2023-10-04'
 description: 'Подробное описание модели погружного шламового насоса с агитатором Solidpump TTZ, ее технические параметры и области применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/submersible_slurry_pump_with_agitator_solidpump_ttz.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

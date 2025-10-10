@@ -4,7 +4,7 @@ date: '2025-03-18T13:06:38+08:00'
 description: 'Подробное описание погружных насосов серии MH-D для перекачивания загрязненных жидкостей на большие расстояния.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/high_pressure_submersible_dredging_pump_model_review.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

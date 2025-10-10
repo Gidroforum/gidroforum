@@ -4,7 +4,7 @@ date: '2025-04-21'
 description: 'Полный обзор насосов смешанного потока ZBL бренда Aquastrong, их технические характеристики, области применения и преимущества для вашего бизнеса.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_zbl_mixed_flow_pump.png'
-tags: ["Aquastrong", "насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

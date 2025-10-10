@@ -4,7 +4,7 @@ date: '2023-10-05'
 description: 'Обзор характеристик и применения автоматического погружного дренажного насоса серии TBZE от Solidpump.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/automatic_submersible_drainage_pump_solidpump_tbze.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

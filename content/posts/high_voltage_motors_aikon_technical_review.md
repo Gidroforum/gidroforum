@@ -4,7 +4,7 @@ date: '2025-10-01T13:06:38+08:00'
 description: 'Полный обзор характеристик, типов охлаждения и областей применения высоковольтных электродвигателей Aikon.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/high_voltage_motors_aikon_technical_review.png'
-tags: ["электродвигатели", "высоковольтные", "AIKON"]
+tags: ["AIKON"]
 theme: 'light'
 ---
 

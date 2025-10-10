@@ -4,7 +4,7 @@ date: '2025-03-05'
 description: 'Полный обзор моноблочных центробежных насосов EST бренда Aquastrong, их технические характеристики, области применения и преимущества.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_centrifugal_pumps_est_review.png'
-tags: ["Aquastrong", "центробежные насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Обзор автоматической трубной муфты ТО от Solidpump для быстрого соединения погружных насосов с напорным трубопроводом.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/automatic_pipe_coupling_solidpump_review.png'
-tags: ["Solidpump", "канализационные насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

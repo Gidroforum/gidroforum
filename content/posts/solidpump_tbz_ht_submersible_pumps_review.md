@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Подробное описание характеристик, областей применения и преимуществ погружного дренажного насоса Solidpump TBZ HT.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_tbz_ht_submersible_pumps_review.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2025-01-08'
 description: 'Подробное описание малых дренажных насосов Solidpump TSA, их характеристики и область применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/small_drainage_pump_solidpump_tsa_purchase_official_dealer_russia.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

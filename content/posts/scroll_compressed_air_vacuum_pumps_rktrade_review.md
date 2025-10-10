@@ -4,7 +4,7 @@ date: '2025-01-15'
 description: 'Обзор моделей и параметров воздуходувок RSP, предлагаемых компанией РК-Трейд для различных областей применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/scroll_compressed_air_vacuum_pumps_rktrade_review.png'
-tags: ["Solidpump", "Воздуходувки"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

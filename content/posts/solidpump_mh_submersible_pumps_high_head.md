@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Продуктивная работа на больших расстояниях и высотах: технические характеристики погружных дренажных насосов MH от Solidpump.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_mh_submersible_pumps_high_head.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

@@ -4,7 +4,7 @@ date: '2023-10-05'
 description: 'Подробное описание переносного дренажного насоса Solidpump TSM(G), его технические характеристики и области применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/portable_drainage_pump_solidpump_tsmg.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

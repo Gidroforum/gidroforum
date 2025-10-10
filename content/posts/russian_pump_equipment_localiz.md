@@ -4,7 +4,7 @@ date: '2023-10-15'
 description: 'Узнайте, что скрывается за понятием «Насосное оборудование, произведенное на территории Российской Федерации» и как определить, является ли оно российским.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/russian_pump_equipment_localization.png'
-tags: ["WILO", "новости wilo"]
+tags: ["WILO"]
 theme: 'light'
 ---
 

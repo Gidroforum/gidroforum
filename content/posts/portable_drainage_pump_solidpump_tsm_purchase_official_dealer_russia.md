@@ -4,7 +4,7 @@ date: '2023-10-05T10:00:00+03:00'
 description: 'Продуктивность, прочность и надежность переносных насосов TSM для строительства и промышленности.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/portable_drainage_pump_solidpump_tsm_purchase_official_dealer_russia.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

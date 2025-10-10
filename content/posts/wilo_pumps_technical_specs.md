@@ -4,7 +4,7 @@ date: '2023-10-15'
 description: 'Полный обзор технических характеристик и модельного ряда насосов WILO, их применение в различных отраслях промышленности.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/wilo_pumps_technical_specs.png'
-tags: ["WILO", "насосы"]
+tags: ["WILO"]
 theme: 'light'
 ---
 

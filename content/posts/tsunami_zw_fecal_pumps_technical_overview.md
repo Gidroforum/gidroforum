@@ -4,7 +4,7 @@ date: '2025-01-10'
 description: 'Полный технический обзор фекальных насосов Tsunami ZW, их характеристик, моделей и областей применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/tsunami_zw_fecal_pumps_technical_overview.jpg)'
-tags: ['Tsunami', 'Насосы']
+tags: ['Tsunami']
 theme: 'light'
 ---
 # Tsunami ZW — Фекальные насосы: Технический обзор

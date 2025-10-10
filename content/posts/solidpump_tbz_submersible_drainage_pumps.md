@@ -4,7 +4,7 @@ date: '2025-01-08'
 description: 'Технический обзор и область применения погружных дренажных насосов Solidpump TBZ для перекачивания загрязненной воды.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_tbz_submersible_drainage_pumps.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

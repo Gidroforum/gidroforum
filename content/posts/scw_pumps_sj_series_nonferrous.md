@@ -4,7 +4,7 @@ date: '2025-04-25'
 description: 'Узнайте все о центробежных скважинных насосах SJ с нержавеющими колесами, их характеристиках, преимуществах и областях применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/scw_pumps_sj_series_nonferrous_wheels.png'
-tags: ["насосы cnp"]
+tags: ["CNP"]
 theme: 'light'
 ---
 

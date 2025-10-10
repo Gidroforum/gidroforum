@@ -4,7 +4,7 @@ date: '2025-04-15'
 description: 'Погружные канализационные электронасосы для отвода сточных вод. Высокая эффективность в самых неблагоприятных условиях.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_wqc_pump_moscow.png'
-tags: ["Aquastrong", "канализационный насос", "WQC"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

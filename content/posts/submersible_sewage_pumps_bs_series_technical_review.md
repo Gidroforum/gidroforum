@@ -4,7 +4,7 @@ date: '2025-01-08'
 description: 'Полный обзор характеристик, модельного ряда и областей применения канализационных насосов с рабочим колесом канального типа.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/submersible_sewage_pumps_bs_series_technical_review.png'
-tags: ["Solidpump", "Канализационные насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

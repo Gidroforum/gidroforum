@@ -4,7 +4,7 @@ date: '2025-04-01'
 description: 'Покупка надежных насосов для шлама KBS бренда Aquastrong в Москве, Московской области и с доставкой по России. Описание, характеристики и области применения.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_sludge_pumps_kbs_moscow.png'
-tags: ["Aquastrong", "насосы для шлама"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

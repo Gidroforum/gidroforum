@@ -4,7 +4,7 @@ date: '2025-01-08'
 description: 'Подробное описание и технические характеристики малых автоматических дренажных насосов Solidpump серии TSAE.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/small_automatic_drainage_pump_tsae_solidpump.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

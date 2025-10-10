@@ -4,7 +4,7 @@ date: '2023-10-15T14:28:37+08:00'
 description: 'Узнайте больше о системе монтажа и подъема мешалок серии Е/HSM, идеальной для легкой установки и обслуживания мешалок.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/system_mounting_rising_mixer_e_hsm.png'
-tags: ["Solidpump", "Мешалки"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

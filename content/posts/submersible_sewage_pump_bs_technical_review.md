@@ -4,7 +4,7 @@ date: '2025-03-18'
 description: 'Подробное описание и характеристики канализационного насоса BS от Solidpump для перекачивания сточных вод.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/submersible_sewage_pump_bs_technical_review.png'
-tags: ["Solidpump", "Канализационные насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

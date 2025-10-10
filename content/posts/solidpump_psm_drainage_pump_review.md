@@ -4,7 +4,7 @@ date: '2025-03-01T13:06:38+08:00'
 description: 'Технический обзор переносного дренажного насоса Solidpump PS(M), включающий характеристики, области применения и модели.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/solidpump_psm_drainage_pump_review.png'
-tags: ["Solidpump", "Насосы"]
+tags: ["Solidpump"]
 theme: 'light'
 ---
 

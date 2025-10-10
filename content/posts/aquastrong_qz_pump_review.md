@@ -4,7 +4,7 @@ date: '2025-04-05'
 description: 'Подробный обзор радиально-осевого погружного насоса QZ бренда Aquastrong, его технических характеристик, областей применения и преимуществ.'
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_qz_pump_review.png'
-tags: ["Aquastrong", "насосы"]
+tags: ["Aquastrong"]
 theme: 'light'
 ---
 

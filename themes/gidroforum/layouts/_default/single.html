@@ -16,7 +16,10 @@
                       {{ end }}
                     {{ end }}
                   </span>
-                  <span class="category-eyebrow__date">{{ .Page.Params.Date | time.Format ":date_long"}}</span>
+                  <span class="category-eyebrow__date">
+                      {{ $date := .Page.Params.Date | default now }}
+                      {{ $date | time.Format ":date_long" }}
+                  </span>
                 </div>
               </div>
             </div>

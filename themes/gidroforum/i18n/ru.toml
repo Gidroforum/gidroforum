@@ -1,11 +1,11 @@
 [home]
     other = "Главная"
 [posts]
-    other = "Статьи"
+    other = "Продукция"
 [about]
     other = "О нас"
 [latestArticles]
-    other = "Статьи"
+    other = "Продукция"
 [moreArticles]
     other = "Больше статей"
 [viewArchive]

@@ -51,6 +51,26 @@
 <!-- Добавьте где-то в сайдбаре -->
 {{ partial "sidebar-regions.html" . }}
 
+<!-- Добавьте этот пункт в основное меню -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="regionsDropdown"
+       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        🌍 Регионы
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="regionsDropdown">
+        <li><a class="dropdown-item" href="/regions/">Все регионы</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="/regions/rossiya/">По всей России</a></li>
+        <li><a class="dropdown-item" href="/regions/moskva/">Москва</a></li>
+        <li><a class="dropdown-item" href="/regions/sankt-peterburg/">Санкт-Петербург</a></li>
+        <li><a class="dropdown-item" href="/regions/rostov-na-donu/">Ростов-на-Дону</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="/regions/krasnodar/">Краснодар</a></li>
+        <li><a class="dropdown-item" href="/regions/ekaterinburg/">Екатеринбург</a></li>
+        <li><a class="dropdown-item" href="/regions/kazan/">Казань</a></li>
+    </ul>
+</li>
+
         <!--  Сайт создан на <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/floyd-li/hugo-theme-itheme" target="_blank">iTheme</a>
         -->
         </div>

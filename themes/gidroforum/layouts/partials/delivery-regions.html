@@ -4,36 +4,36 @@
     <h2 class="delivery-title">🚚 Доставка промышленных насосов по всей России</h2>
     <p class="delivery-subtitle">Работаем со всеми регионами РФ. Быстрая доставка, наличие на складах.</p>
 
-    <!-- Форма запроса расчета -->
-    <div class="delivery-form">
+    <!-- Форма Formspree -->
+    <form class="delivery-form" id="deliveryForm" action="https://formspree.io/f/mqakgqeb" method="POST">
       <h3 class="form-title">Запросить расчет доставки в ваш город</h3>
 
       <div class="form-row">
         <div class="form-group">
           <label>Ваш город *</label>
-          <select class="city-select" id="citySelect" required>
+          <select class="city-select" name="city" required>
             <option value="">Выберите город</option>
-            <option value="moscow">Москва</option>
-            <option value="spb">Санкт-Петербург</option>
-            <option value="rostov">Ростов-на-Дону</option>
-            <option value="krasnodar">Краснодар</option>
-            <option value="ekaterinburg">Екатеринбург</option>
-            <option value="kazan">Казань</option>
-            <option value="nn">Нижний Новгород</option>
-            <option value="other">Другой город</option>
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+            <option value="Краснодар">Краснодар</option>
+            <option value="Екатеринбург">Екатеринбург</option>
+            <option value="Казань">Казань</option>
+            <option value="Нижний Новгород">Нижний Новгород</option>
+            <option value="Другой город">Другой город</option>
           </select>
         </div>
 
         <div class="form-group">
           <label>Тип оборудования *</label>
-          <select class="equipment-select" id="equipmentSelect" required>
+          <select class="equipment-select" name="equipment" required>
             <option value="">Выберите тип насоса</option>
-            <option value="centrifugal">Центробежные насосы</option>
-            <option value="drainage">Дренажные насосы</option>
-            <option value="chemical">Химические насосы</option>
-            <option value="submersible">Погружные насосы</option>
-            <option value="pump_station">Насосные станции</option>
-            <option value="other">Другое оборудование</option>
+            <option value="Центробежные насосы">Центробежные насосы</option>
+            <option value="Дренажные насосы">Дренажные насосы</option>
+            <option value="Химические насосы">Химические насосы</option>
+            <option value="Погружные насосы">Погружные насосы</option>
+            <option value="Насосные станции">Насосные станции</option>
+            <option value="Другое оборудование">Другое оборудование</option>
           </select>
         </div>
       </div>
@@ -41,52 +41,58 @@
       <div class="form-row">
         <div class="form-group full-width">
           <label>Ваше имя *</label>
-          <input type="text" class="name-input" id="nameInput" placeholder="Иван Иванов" required>
+          <input type="text" class="name-input" name="name" placeholder="Иван Иванов" required>
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group">
           <label>Ваш телефон *</label>
-          <input type="tel" class="phone-input" id="phoneInput" placeholder="+7 (___) ___-__-__" required>
+          <input type="tel" class="phone-input" name="phone" placeholder="+7 (___) ___-__-__" required>
         </div>
 
         <div class="form-group">
           <label>Ваш Email *</label>
-          <input type="email" class="email-input" id="emailInput" placeholder="ivan@example.com" required>
+          <input type="email" class="email-input" name="email" placeholder="ivan@example.com" required>
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group full-width">
           <label>Комментарий (необязательно)</label>
-          <textarea class="comment-input" id="commentInput" placeholder="Укажите модель, количество или особые требования"></textarea>
+          <textarea class="comment-input" name="comment" placeholder="Укажите модель, количество или особые требования"></textarea>
         </div>
       </div>
 
+      <!-- Скрытые поля для Formspree -->
+      <input type="hidden" name="_subject" value="Новый запрос расчета доставки с ГИДРОФОРУМ">
+      <input type="hidden" name="_language" value="ru">
+      <input type="hidden" name="_format" value="plain">
+      <input type="text" name="_gotcha" style="display:none">
+
       <div class="form-actions">
-        <button class="btn-request" id="submitRequest">
+        <button type="submit" class="btn-request" id="submitRequest">
           📩 Запросить расчет стоимости
         </button>
         <div class="form-note">
-          Менеджер свяжется с вами в течение часа для уточнения деталей
+          Менеджер свяжется с вами в течение 15 минут для уточнения деталей
         </div>
         <div id="formMessage" class="form-message"></div>
       </div>
-    </div>
+    </form>
 
     <!-- Список основных городов -->
     <div class="cities-list">
       <h4>🔹 Основные города поставок:</h4>
       <div class="cities-tags">
-        <span class="city-tag" data-city="moscow">Москва</span>
-        <span class="city-tag" data-city="spb">Санкт-Петербург</span>
-        <span class="city-tag" data-city="rostov">Ростов-на-Дону</span>
-        <span class="city-tag" data-city="krasnodar">Краснодар</span>
-        <span class="city-tag" data-city="ekaterinburg">Екатеринбург</span>
-        <span class="city-tag" data-city="kazan">Казань</span>
-        <span class="city-tag" data-city="nn">Нижний Новгород</span>
-        <span class="city-tag" data-city="other">+150 городов РФ</span>
+        <span class="city-tag" data-city="Москва">Москва</span>
+        <span class="city-tag" data-city="Санкт-Петербург">Санкт-Петербург</span>
+        <span class="city-tag" data-city="Ростов-на-Дону">Ростов-на-Дону</span>
+        <span class="city-tag" data-city="Краснодар">Краснодар</span>
+        <span class="city-tag" data-city="Екатеринбург">Екатеринбург</span>
+        <span class="city-tag" data-city="Казань">Казань</span>
+        <span class="city-tag" data-city="Нижний Новгород">Нижний Новгород</span>
+        <span class="city-tag" data-city="Другой город">+150 городов РФ</span>
       </div>
     </div>
   </div>
@@ -213,6 +219,11 @@
   background: #2c5282;
 }
 
+.btn-request:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
 .form-note {
   color: #718096;
   font-size: 14px;
@@ -224,18 +235,21 @@
   padding: 10px;
   border-radius: 6px;
   font-size: 14px;
+  display: none;
 }
 
 .form-message.success {
   background: #c6f6d5;
   color: #22543d;
   border: 1px solid #9ae6b4;
+  display: block;
 }
 
 .form-message.error {
   background: #fed7d7;
   color: #742a2a;
   border: 1px solid #fc8181;
+  display: block;
 }
 
 /* Список городов */
@@ -268,6 +282,12 @@
 }
 
 .city-tag:hover {
+  background: #4299e1;
+  color: white;
+  border-color: #4299e1;
+}
+
+.city-tag.selected {
   background: #4299e1;
   color: white;
   border-color: #4299e1;
@@ -307,12 +327,9 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Элементы формы
-  const citySelect = document.getElementById('citySelect');
-  const equipmentSelect = document.getElementById('equipmentSelect');
-  const nameInput = document.getElementById('nameInput');
-  const phoneInput = document.getElementById('phoneInput');
-  const emailInput = document.getElementById('emailInput');
-  const commentInput = document.getElementById('commentInput');
+  const deliveryForm = document.getElementById('deliveryForm');
+  const citySelect = deliveryForm.querySelector('[name="city"]');
+  const phoneInput = deliveryForm.querySelector('[name="phone"]');
   const submitBtn = document.getElementById('submitRequest');
   const formMessage = document.getElementById('formMessage');
   const cityTags = document.querySelectorAll('.city-tag');
@@ -361,7 +378,6 @@ document.addEventListener('DOMContentLoaded', function() {
   function showMessage(text, type) {
     formMessage.textContent = text;
     formMessage.className = 'form-message ' + type;
-    formMessage.style.display = 'block';
 
     // Автоскрытие для success сообщений
     if (type === 'success') {
@@ -371,182 +387,54 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Функция отправки на email через Formspree или аналогичный сервис
-  async function sendEmail(formData) {
-    try {
-      // Здесь нужно заменить YOUR_EMAIL на реальный email
-      const response = await fetch('https://formspree.io/f/995ecd0b6fc44e868a459d27d2dafd31', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          _replyto: formData.email,
-          _subject: `Запрос расчета доставки от ${formData.name}`,
-          name: formData.name,
-          phone: formData.phone,
-          email: formData.email,
-          city: formData.city,
-          equipment: formData.equipment,
-          comment: formData.comment,
-          page: window.location.href,
-          timestamp: new Date().toLocaleString('ru-RU')
-        })
-      });
-
-      return response.ok;
-    } catch (error) {
-      console.error('Ошибка отправки:', error);
-      return false;
-    }
-  }
-
-  // Функция отправки через EmailJS (альтернатива)
-  async function sendWithEmailJS(formData) {
-    // Для использования EmailJS нужна регистрация на https://www.emailjs.com/
-    // Раскомментируйте и настройте при готовности
-
-    /*
-    return emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
-      {
-        name: formData.name,
-        phone: formData.phone,
-        email: formData.email,
-        city: formData.city,
-        equipment: formData.equipment,
-        comment: formData.comment,
-        date: new Date().toLocaleDateString('ru-RU')
-      }
-    );
-    */
-
-   // Временно возвращаем успех для тестирования
-   return Promise.resolve({ status: 200 });
-  }
-
-  // Обработка отправки формы
-  submitBtn.addEventListener('click', async function(e) {
+  // Обработка отправки формы через Formspree
+  deliveryForm.addEventListener('submit', async function(e) {
     e.preventDefault();
-
-    // Валидация
-    if (!citySelect.value) {
-      showMessage('Пожалуйста, выберите город', 'error');
-      citySelect.focus();
-      return;
-    }
-
-    if (!equipmentSelect.value) {
-      showMessage('Пожалуйста, выберите тип оборудования', 'error');
-      equipmentSelect.focus();
-      return;
-    }
-
-    if (!nameInput.value.trim()) {
-      showMessage('Пожалуйста, введите ваше имя', 'error');
-      nameInput.focus();
-      return;
-    }
-
-    if (!phoneInput.value || phoneInput.value.length < 16) {
-      showMessage('Пожалуйста, введите корректный номер телефона', 'error');
-      phoneInput.focus();
-      return;
-    }
-
-    if (!emailInput.value || !emailInput.value.includes('@')) {
-      showMessage('Пожалуйста, введите корректный email', 'error');
-      emailInput.focus();
-      return;
-    }
 
     // Показать загрузку
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = '⏳ Отправка...';
     submitBtn.disabled = true;
 
-    // Подготовка данных
-    const formData = {
-      name: nameInput.value.trim(),
-      phone: phoneInput.value,
-      email: emailInput.value.trim(),
-      city: citySelect.options[citySelect.selectedIndex].text,
-      equipment: equipmentSelect.options[equipmentSelect.selectedIndex].text,
-      comment: commentInput.value.trim(),
-      date: new Date().toLocaleString('ru-RU'),
-      page: window.location.href
-    };
-
-    // Логирование данных (для отладки)
-    console.log('Данные формы:', formData);
-
     try {
-      // Отправка через Formspree (раскомментируйте при настройке)
-      // const success = await sendEmail(formData);
+      // Отправка формы через Formspree
+      const formData = new FormData(deliveryForm);
 
-      // Альтернатива: EmailJS (раскомментируйте при настройке)
-      // await sendWithEmailJS(formData);
+      const response = await fetch(deliveryForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
 
-      // Временное решение - показываем успех без реальной отправки
-      showMessage('✅ Запрос отправлен успешно! Мы свяжемся с вами в течение 15 минут.', 'success');
+      if (response.ok) {
+        // Успешная отправка
+        showMessage('✅ Запрос отправлен успешно! Мы свяжемся с вами в течение 15 минут.', 'success');
 
-      // Отправка на почту через mailto (резервный вариант)
-      const mailtoLink = `mailto:logvinenko.a@gmail.com?subject=Запрос расчета доставки от ${encodeURIComponent(formData.name)}&body=Имя: ${encodeURIComponent(formData.name)}%0AТелефон: ${encodeURIComponent(formData.phone)}%0AEmail: ${encodeURIComponent(formData.email)}%0AГород: ${encodeURIComponent(formData.city)}%0AОборудование: ${encodeURIComponent(formData.equipment)}%0AКомментарий: ${encodeURIComponent(formData.comment)}%0AДата: ${encodeURIComponent(formData.date)}%0AСтраница: ${encodeURIComponent(formData.page)}`;
+        // Очистка формы
+        deliveryForm.reset();
 
-      // Открываем почтовый клиент (опционально)
-      // window.location.href = mailtoLink;
+        // Сброс выбранных тегов
+        cityTags.forEach(t => t.classList.remove('selected'));
 
-      // Очистка формы
-      citySelect.value = '';
-      equipmentSelect.value = '';
-      nameInput.value = '';
-      phoneInput.value = '';
-      emailInput.value = '';
-      commentInput.value = '';
-
-      // Сброс выбранных тегов
-      cityTags.forEach(t => t.classList.remove('selected'));
-
+        // Перенаправление на страницу спасибо (опционально)
+        // window.location.href = '/spasibo-za-zayavku/';
+      } else {
+        // Ошибка отправки
+        const errorData = await response.json();
+        console.error('Ошибка Formspree:', errorData);
+        showMessage('❌ Произошла ошибка при отправке. Попробуйте позже.', 'error');
+      }
     } catch (error) {
-      console.error('Ошибка:', error);
-      showMessage('❌ Произошла ошибка при отправке. Попробуйте позже или позвоните нам.', 'error');
+      // Сетевая ошибка
+      console.error('Сетевая ошибка:', error);
+      showMessage('❌ Ошибка сети. Проверьте подключение к интернету.', 'error');
     } finally {
       // Восстановление кнопки
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
     }
   });
-
-  // Отправка через mailto как fallback
-  function sendViaMailto(formData) {
-    const subject = `Запрос расчета доставки от ${formData.name}`;
-    const body = `
-Имя: ${formData.name}
-Телефон: ${formData.phone}
-Email: ${formData.email}
-Город: ${formData.city}
-Оборудование: ${formData.equipment}
-Комментарий: ${formData.comment || 'нет'}
-Дата: ${formData.date}
-Страница: ${formData.page}
-    `.trim();
-
-    const mailtoUrl = `mailto:logvinenko.a@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    return new Promise((resolve) => {
-      // Пытаемся открыть почтовый клиент
-      const opened = window.open(mailtoUrl, '_blank');
-
-      if (opened) {
-        resolve(true);
-      } else {
-        // Если не удалось открыть в новом окне, пробуем перенаправить
-        window.location.href = mailtoUrl;
-        resolve(true);
-      }
-    });
-  }
 });
 </script>

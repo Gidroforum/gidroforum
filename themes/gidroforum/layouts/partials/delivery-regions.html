@@ -493,7 +493,7 @@ document.addEventListener('DOMContentLoaded', function() {
       showMessage('✅ Запрос отправлен успешно! Мы свяжемся с вами в течение 15 минут.', 'success');
 
       // Отправка на почту через mailto (резервный вариант)
-      const mailtoLink = `mailto:001@armarost.ru?subject=Запрос расчета доставки от ${encodeURIComponent(formData.name)}&body=Имя: ${encodeURIComponent(formData.name)}%0AТелефон: ${encodeURIComponent(formData.phone)}%0AEmail: ${encodeURIComponent(formData.email)}%0AГород: ${encodeURIComponent(formData.city)}%0AОборудование: ${encodeURIComponent(formData.equipment)}%0AКомментарий: ${encodeURIComponent(formData.comment)}%0AДата: ${encodeURIComponent(formData.date)}%0AСтраница: ${encodeURIComponent(formData.page)}`;
+      const mailtoLink = `mailto:logvinenko.a@gmail.com?subject=Запрос расчета доставки от ${encodeURIComponent(formData.name)}&body=Имя: ${encodeURIComponent(formData.name)}%0AТелефон: ${encodeURIComponent(formData.phone)}%0AEmail: ${encodeURIComponent(formData.email)}%0AГород: ${encodeURIComponent(formData.city)}%0AОборудование: ${encodeURIComponent(formData.equipment)}%0AКомментарий: ${encodeURIComponent(formData.comment)}%0AДата: ${encodeURIComponent(formData.date)}%0AСтраница: ${encodeURIComponent(formData.page)}`;
 
       // Открываем почтовый клиент (опционально)
       // window.location.href = mailtoLink;

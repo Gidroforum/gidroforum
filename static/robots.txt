@@ -1,0 +1,11 @@
+User-agent: *
+Host: https://gidroforum.ru
+Sitemap: https://gidroforum.ru/sitemap.xml
+
+# Системные страницы
+Disallow: /admin/
+Disallow: /api/
+Disallow: /auth/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/

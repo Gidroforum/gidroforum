@@ -31,6 +31,37 @@
     {{ end }}
     <!-- JivoChat widget
      <script src="//code.jivo.ru/widget/tYE2ejZvjE" async></script> -->
+
+     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Russia"
+  },
+  "availableDeliveryMethod": "https://schema.org/ParcelService",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Промышленные насосы",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Доставка по России"
+        },
+        "areaServed": {
+          "@type": "State",
+          "name": "Все регионы РФ"
+        }
+      }
+    ]
+  }
+}
+</script>
+
 <!-- Стиль для обратной связи -->
      <style>
              *

@@ -1,0 +1,37 @@
+{{/* Упрощенная версия без сложной обработки */}}
+{{- $description := "" -}}
+
+{{/* 1. Явно указанный description */}}
+{{- if .Description -}}
+    {{- $description = .Description -}}
+
+{{/* 2. Summary из front matter */}}
+{{- else if .Summary -}}
+    {{- $description = .Summary | plainify | truncate 160 -}}
+
+{{/* 3. Генерация из контента (упрощенная) */}}
+{{- else if .IsPage -}}
+    {{/* Берем первые 250 символов контента */}}
+    {{- $desc := .Content | plainify | truncate 250 -}}
+    {{/* Удаляем лишние пробелы */}}
+    {{- $description = trim $desc " \t\n\r" -}}
+
+{{/* 4. Заголовок страницы */}}
+{{- else if .Title -}}
+    {{- $description = .Title -}}
+
+{{/* 5. Глобальное описание сайта */}}
+{{- else if .Site.Params.siteDescription -}}
+    {{- $description = .Site.Params.siteDescription -}}
+
+{{/* 6. Заголовок сайта как последний вариант */}}
+{{- else -}}
+    {{- $description = .Site.Title -}}
+{{- end -}}
+
+{{/* Гарантируем, что description не пустой */}}
+{{- if eq (len ($description | string)) 0 -}}
+    {{- $description = .Site.Title -}}
+{{- end -}}
+
+<meta name="description" content="{{ $description }}">

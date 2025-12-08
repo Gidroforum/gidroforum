@@ -7,7 +7,8 @@
     <meta name="keyword" content="{{ .Site.Params.keyword }}">
 
     {{- template "_internal/opengraph.html" . -}}
-
+     {{/* Подключаем partial с description */}}
+    {{- partial "head-meta.html" . -}}
     <title>{{ .Title }}</title>
 
     <link rel="canonical" href="{{ .Permalink | relURL }}">

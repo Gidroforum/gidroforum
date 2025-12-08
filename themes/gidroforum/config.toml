@@ -2,3 +2,6 @@
   ShowCopyRight = true
   ShowMore = true
   ShowRSS = true
+  siteDescription = "Описание сайта по умолчанию"
+  truncateSummary = 160
+  plainifySummary = true

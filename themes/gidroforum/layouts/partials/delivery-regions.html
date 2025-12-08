@@ -4,126 +4,94 @@
     <h2 class="delivery-title">🚚 Доставка промышленных насосов по всей России</h2>
     <p class="delivery-subtitle">Работаем со всеми регионами РФ. Быстрая доставка, наличие на складах.</p>
 
-    <!-- Кнопки быстрой связи -->
-    <div class="contact-buttons">
+    <!-- Кнопки связи -->
+    <div class="contact-buttons active" id="contactButtons">
       <a href="tel:+79896100204" class="contact-btn phone-btn" title="Позвонить">
         <svg viewBox="0 0 24 24" fill="#fff">
           <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55.0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39.0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55.0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
         </svg>
-        <span>Позвонить</span>
       </a>
-
       <a href="https://wa.me/79896100204" target="_blank" class="contact-btn whatsapp-btn" title="WhatsApp">
         <svg viewBox="0 0 24 24" fill="#fff">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198.0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479.0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87.0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86.0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64.0 5.122 1.03 6.988 2.898a9.825 9.825.0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815.0 0012.05.0C5.495.0.16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882.0 005.683 1.448h.005c6.554.0 11.89-5.335 11.893-11.893a11.821 11.821.0 00-3.48-8.413z"></path>
         </svg>
-        <span>WhatsApp</span>
       </a>
-
       <a href="mailto:001@armarost.ru" class="contact-btn email-btn" title="Email">
         <svg viewBox="0 0 24 24" fill="#fff">
           <path d="M20 4H4c-1.1.0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1.0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>
         </svg>
-        <span>Email</span>
       </a>
     </div>
 
-    <!-- Форма выбора города -->
-    <div class="delivery-form">
-      <h3 class="form-title">Запросить расчет доставки в ваш город</h3>
-
-      <div class="form-row">
-        <div class="form-group full-width">
-          <label>Выберите ваш город *</label>
-          <select class="city-select" id="citySelect" required>
-            <option value="">Выберите город из списка</option>
-            <option value="rostov">Ростов-на-Дону</option>
-            <option value="moscow">Москва</option>
-            <option value="spb">Санкт-Петербург</option>
-            <option value="krasnodar">Краснодар</option>
-            <option value="ekaterinburg">Екатеринбург</option>
-            <option value="kazan">Казань</option>
-            <option value="nn">Нижний Новгород</option>
-            <option value="other">Другой город</option>
-          </select>
-        </div>
+    <!-- Выбор города -->
+    <div class="city-selection">
+      <div class="form-group">
+        <label>Выберите ваш город для расчета доставки:</label>
+        <select class="city-select" id="citySelect">
+          <option value="">Выберите город из списка</option>
+          <option value="rostov">Ростов-на-Дону</option>
+          <option value="moscow">Москва</option>
+          <option value="spb">Санкт-Петербург</option>
+          <option value="krasnodar">Краснодар</option>
+          <option value="ekaterinburg">Екатеринбург</option>
+          <option value="kazan">Казань</option>
+          <option value="nn">Нижний Новгород</option>
+          <option value="other">Другой город</option>
+        </select>
       </div>
+    </div>
 
-      <!-- Информация о доставке (появляется при выборе города) -->
-      <div id="deliveryInfo" class="delivery-info" style="display: none;">
-        <div class="info-card">
-          <h4>Доставка в <span id="selectedCityName">Москву</span></h4>
-          <div class="info-grid">
-            <div class="info-item">
-              <span class="info-label">Срок:</span>
-              <span id="deliveryTime" class="info-value">1-2 дня</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Стоимость:</span>
-              <span id="deliveryPrice" class="info-value">от 500 ₽</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Склад:</span>
-              <span id="warehouseStatus" class="info-value status-available">в наличии</span>
-            </div>
+    <!-- Информация о доставке -->
+    <div id="deliveryInfo" class="delivery-info" style="display: none;">
+      <div class="info-card">
+        <h4>Доставка в <span id="selectedCityName">Москву</span></h4>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Срок:</span>
+            <span id="deliveryTime" class="info-value">1-2 дня</span>
           </div>
-          <div id="cityDescription" class="city-description">
-            <!-- Описание города появится здесь -->
+          <div class="info-item">
+            <span class="info-label">Стоимость:</span>
+            <span id="deliveryPrice" class="info-value">от 500 ₽</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Склад:</span>
+            <span id="warehouseStatus" class="info-value status-available">в наличии</span>
           </div>
         </div>
-      </div>
-
-      <!-- Форма запроса -->
-      <div class="request-form" id="requestForm" style="display: none;">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Ваше имя *</label>
-            <input type="text" class="name-input" id="nameInput" placeholder="Иван Иванов" required>
-          </div>
-
-          <div class="form-group">
-            <label>Ваш телефон *</label>
-            <input type="tel" class="phone-input" id="phoneInput" placeholder="+7 (___) ___-__-__" required>
-          </div>
+        <div id="cityDescription" class="city-description">
+          <!-- Описание города появится здесь -->
         </div>
 
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label>Тип оборудования *</label>
-            <select class="equipment-select" id="equipmentSelect" required>
-              <option value="">Выберите тип насоса</option>
-              <option value="centrifugal">Центробежные насосы</option>
-              <option value="drainage">Дренажные насосы</option>
-              <option value="chemical">Химические насосы</option>
-              <option value="submersible">Погружные насосы</option>
-              <option value="pump_station">Насосные станции</option>
-              <option value="other">Другое оборудование</option>
-            </select>
-          </div>
-        </div>
+        <!-- Кнопки для быстрого контакта -->
+        <div class="action-buttons">
+          <a href="tel:+79896100204" class="action-btn phone-action">
+            <svg viewBox="0 0 24 24" fill="#fff">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55.0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39.0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55.0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+            </svg>
+            <span>Позвонить для расчета</span>
+          </a>
 
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label>Комментарий (необязательно)</label>
-            <textarea class="comment-input" id="commentInput" placeholder="Укажите модель, количество или особые требования"></textarea>
-          </div>
-        </div>
+          <a href="https://wa.me/79896100204?text=Здравствуйте!%20Нужен%20расчет%20доставки%20в%20город%20" target="_blank" class="action-btn whatsapp-action">
+            <svg viewBox="0 0 24 24" fill="#fff">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198.0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479.0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87.0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86.0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64.0 5.122 1.03 6.988 2.898a9.825 9.825.0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815.0 0012.05.0C5.495.0.16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882.0 005.683 1.448h.005c6.554.0 11.89-5.335 11.893-11.893a11.821 11.821.0 00-3.48-8.413z"></path>
+            </svg>
+            <span>Написать в WhatsApp</span>
+          </a>
 
-        <div class="form-actions">
-          <button class="btn-request" id="submitRequest">
-            📩 Запросить расчет стоимости
-          </button>
-          <div class="form-note">
-            Менеджер свяжется с вами в течение 15 минут для уточнения деталей
-          </div>
-          <div id="formMessage" class="form-message"></div>
+          <a href="mailto:001@armarost.ru?subject=Расчет доставки в " class="action-btn email-action">
+            <svg viewBox="0 0 24 24" fill="#fff">
+              <path d="M20 4H4c-1.1.0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1.0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>
+            </svg>
+            <span>Отправить Email</span>
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- Список основных городов -->
+    <!-- Список городов -->
     <div class="cities-list">
-      <h4>🔹 Основные города поставок:</h4>
+      <h4>Основные города поставок:</h4>
       <div class="cities-tags" id="citiesTags">
         <span class="city-tag" data-city="rostov">Ростов-на-Дону</span>
         <span class="city-tag" data-city="moscow">Москва</span>
@@ -145,8 +113,8 @@
   background: #f8fafc;
   border-top: 1px solid #e2e8f0;
   border-bottom: 1px solid #e2e8f0;
-  padding: 30px 0;
-  margin: 40px 0;
+  padding: 20px 0;
+  margin: 20px 0;
 }
 
 .delivery-container {
@@ -157,15 +125,15 @@
 
 .delivery-title {
   color: #2d3748;
-  font-size: 28px;
-  margin: 0 0 10px 0;
+  font-size: 24px;
+  margin: 0 0 8px 0;
   text-align: center;
 }
 
 .delivery-subtitle {
   color: #718096;
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   font-size: 16px;
 }
 
@@ -173,77 +141,49 @@
 .contact-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin: 30px 0;
+  gap: 15px;
+  margin: 20px 0;
 }
 
 .contact-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 24px;
-  border-radius: 8px;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
   transition: all 0.2s;
 }
 
 .contact-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .contact-btn svg {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 
 .phone-btn {
-  background: linear-gradient(135deg, #25d366, #128c7e);
-  color: white;
+  background: #25d366;
 }
 
 .whatsapp-btn {
-  background: linear-gradient(135deg, #075e54, #128c7e);
-  color: white;
+  background: #075e54;
 }
 
 .email-btn {
-  background: linear-gradient(135deg, #ea4335, #d93025);
-  color: white;
+  background: #ea4335;
 }
 
-/* Форма */
-.delivery-form {
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 30px;
-  margin: 30px 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.form-title {
-  color: #2d3748;
-  margin: 0 0 25px 0;
-  font-size: 20px;
-  text-align: center;
-}
-
-.form-row {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
+/* Выбор города */
+.city-selection {
+  margin: 20px 0;
 }
 
 .form-group {
-  flex: 1;
-}
-
-.form-group.full-width {
-  flex: 100%;
+  margin-bottom: 0;
 }
 
 .form-group label {
@@ -251,40 +191,28 @@
   margin-bottom: 8px;
   color: #4a5568;
   font-weight: 500;
+  font-size: 14px;
 }
 
-.city-select,
-.equipment-select,
-.name-input,
-.phone-input,
-.comment-input {
+.city-select {
   width: 100%;
   padding: 12px 16px;
   border: 1px solid #cbd5e0;
   border-radius: 6px;
   font-size: 16px;
   box-sizing: border-box;
+  background: white;
 }
 
-.city-select:focus,
-.equipment-select:focus,
-.name-input:focus,
-.phone-input:focus,
-.comment-input:focus {
+.city-select:focus {
   outline: none;
   border-color: #4299e1;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
 }
 
-.comment-input {
-  height: 100px;
-  resize: vertical;
-  font-family: inherit;
-}
-
 /* Информация о доставке */
 .delivery-info {
-  margin: 25px 0;
+  margin: 20px 0;
   animation: fadeIn 0.5s ease;
 }
 
@@ -294,10 +222,11 @@
 }
 
 .info-card {
-  background: #f7fafc;
+  background: white;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .info-card h4 {
@@ -311,6 +240,8 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
   margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .info-item {
@@ -339,13 +270,10 @@
 }
 
 .city-description {
-  padding: 15px;
-  background: white;
-  border-radius: 8px;
-  border-left: 4px solid #4299e1;
   font-size: 14px;
   line-height: 1.5;
   color: #4a5568;
+  margin-bottom: 20px;
 }
 
 .city-description ul {
@@ -357,90 +285,75 @@
   margin-bottom: 5px;
 }
 
-/* Форма запроса */
-.request-form {
-  animation: fadeIn 0.5s ease;
+/* Кнопки действий */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.form-actions {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.btn-request {
-  background: #2b6cb0;
-  color: white;
-  border: none;
-  padding: 16px 40px;
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
   border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
   transition: all 0.2s;
 }
 
-.btn-request:hover {
-  background: #2c5282;
+.action-btn:hover {
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.btn-request:disabled {
-  background: #a0aec0;
-  cursor: not-allowed;
-  transform: none;
+.action-btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
-.form-note {
-  color: #718096;
-  font-size: 14px;
-  margin-top: 10px;
+.phone-action {
+  background: #25d366;
+  color: white;
 }
 
-.form-message {
-  margin-top: 15px;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  display: none;
+.whatsapp-action {
+  background: #075e54;
+  color: white;
 }
 
-.form-message.success {
-  background: #c6f6d5;
-  color: #22543d;
-  border: 1px solid #9ae6b4;
-  display: block;
-}
-
-.form-message.error {
-  background: #fed7d7;
-  color: #742a2a;
-  border: 1px solid #fc8181;
-  display: block;
+.email-action {
+  background: #ea4335;
+  color: white;
 }
 
 /* Список городов */
 .cities-list {
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: center;
 }
 
 .cities-list h4 {
   color: #2d3748;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 12px;
+  font-size: 16px;
 }
 
 .cities-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
 }
 
 .city-tag {
   background: white;
   border: 1px solid #e2e8f0;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: 20px;
   color: #4a5568;
   cursor: pointer;
@@ -458,68 +371,68 @@
   background: #4299e1;
   color: white;
   border-color: #4299e1;
-  box-shadow: 0 2px 8px rgba(66, 153, 225, 0.3);
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
   .delivery-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .contact-buttons {
-    flex-direction: column;
-    align-items: center;
     gap: 10px;
   }
 
   .contact-btn {
-    width: 100%;
-    max-width: 300px;
-    justify-content: center;
+    width: 45px;
+    height: 45px;
   }
 
-  .form-row {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .delivery-form {
-    padding: 20px;
-  }
-
-  .btn-request {
-    width: 100%;
-    padding: 14px;
+  .contact-btn svg {
+    width: 20px;
+    height: 20px;
   }
 
   .info-grid {
     grid-template-columns: 1fr;
   }
 
+  .action-btn {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
   .cities-tags {
-    gap: 8px;
+    gap: 6px;
   }
 
   .city-tag {
     font-size: 13px;
-    padding: 6px 12px;
+    padding: 5px 10px;
   }
 }
 
 @media (max-width: 480px) {
+  .delivery-container {
+    padding: 0 15px;
+  }
+
   .delivery-title {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .contact-buttons {
+    gap: 8px;
   }
 
   .contact-btn {
-    padding: 12px 16px;
-    font-size: 14px;
+    width: 40px;
+    height: 40px;
   }
 
-  .contact-btn svg {
-    width: 20px;
-    height: 20px;
+  .city-tag {
+    font-size: 12px;
+    padding: 4px 8px;
   }
 }
 </style>
@@ -534,13 +447,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const deliveryPrice = document.getElementById('deliveryPrice');
   const warehouseStatus = document.getElementById('warehouseStatus');
   const cityDescription = document.getElementById('cityDescription');
-  const requestForm = document.getElementById('requestForm');
-  const nameInput = document.getElementById('nameInput');
-  const phoneInput = document.getElementById('phoneInput');
-  const equipmentSelect = document.getElementById('equipmentSelect');
-  const commentInput = document.getElementById('commentInput');
-  const submitBtn = document.getElementById('submitRequest');
-  const formMessage = document.getElementById('formMessage');
+  const whatsappAction = document.querySelector('.whatsapp-action');
+  const emailAction = document.querySelector('.email-action');
   const cityTags = document.querySelectorAll('.city-tag');
 
   // Данные о доставке по городам
@@ -683,34 +591,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
-  // Маска для телефона
-  phoneInput.addEventListener('input', function(e) {
-    let value = e.target.value.replace(/\D/g, '');
-
-    if (value.length > 0) {
-      if (value[0] === '7' || value[0] === '8') {
-        value = value.substring(1);
-      }
-
-      let formatted = '+7 (';
-
-      if (value.length > 0) {
-        formatted += value.substring(0, 3);
-      }
-      if (value.length >= 4) {
-        formatted += ') ' + value.substring(3, 6);
-      }
-      if (value.length >= 7) {
-        formatted += '-' + value.substring(6, 8);
-      }
-      if (value.length >= 9) {
-        formatted += '-' + value.substring(8, 10);
-      }
-
-      e.target.value = formatted;
-    }
-  });
-
   // Обновление информации о городе
   function updateCityInfo(cityKey) {
     const data = cityData[cityKey];
@@ -722,11 +602,15 @@ document.addEventListener('DOMContentLoaded', function() {
     warehouseStatus.className = 'info-value ' + (data.warehouse ? 'status-available' : 'status-unavailable');
     cityDescription.innerHTML = data.description;
 
-    deliveryInfo.style.display = 'block';
-    requestForm.style.display = 'block';
+    // Обновляем ссылки WhatsApp и Email
+    const whatsappText = `Здравствуйте! Нужен расчет доставки в город ${data.displayName}`;
+    const emailSubject = `Расчет доставки в ${data.displayName}`;
 
-    // Прокрутка к форме
-    requestForm.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    whatsappAction.href = `https://wa.me/79896100204?text=${encodeURIComponent(whatsappText)}`;
+    emailAction.href = `mailto:001@armarost.ru?subject=${encodeURIComponent(emailSubject)}`;
+
+    deliveryInfo.style.display = 'block';
+    deliveryInfo.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   // Обработка выбора города из select
@@ -746,7 +630,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     } else {
       deliveryInfo.style.display = 'none';
-      requestForm.style.display = 'none';
     }
   });
 
@@ -763,122 +646,6 @@ document.addEventListener('DOMContentLoaded', function() {
       cityTags.forEach(t => t.classList.remove('selected'));
       this.classList.add('selected');
     });
-  });
-
-  // Показать сообщение
-  function showMessage(text, type) {
-    formMessage.textContent = text;
-    formMessage.className = 'form-message ' + type;
-
-    // Автоскрытие для success сообщений
-    if (type === 'success') {
-      setTimeout(() => {
-        formMessage.style.display = 'none';
-      }, 5000);
-    }
-  }
-
-  // Обработка отправки формы
-  submitBtn.addEventListener('click', async function(e) {
-    e.preventDefault();
-
-    // Валидация
-    if (!citySelect.value) {
-      showMessage('Пожалуйста, выберите город', 'error');
-      citySelect.focus();
-      return;
-    }
-
-    if (!nameInput.value.trim()) {
-      showMessage('Пожалуйста, введите ваше имя', 'error');
-      nameInput.focus();
-      return;
-    }
-
-    if (!phoneInput.value || phoneInput.value.length < 16) {
-      showMessage('Пожалуйста, введите корректный номер телефона', 'error');
-      phoneInput.focus();
-      return;
-    }
-
-    if (!equipmentSelect.value) {
-      showMessage('Пожалуйста, выберите тип оборудования', 'error');
-      equipmentSelect.focus();
-      return;
-    }
-
-    // Показать загрузку
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = '⏳ Отправка...';
-    submitBtn.disabled = true;
-
-    // Подготовка данных
-    const formData = {
-      name: nameInput.value.trim(),
-      phone: phoneInput.value,
-      city: citySelect.options[citySelect.selectedIndex].text,
-      equipment: equipmentSelect.options[equipmentSelect.selectedIndex].text,
-      comment: commentInput.value.trim(),
-      date: new Date().toLocaleString('ru-RU'),
-      page: window.location.href,
-      deliveryInfo: {
-        time: deliveryTime.textContent,
-        price: deliveryPrice.textContent,
-        warehouse: warehouseStatus.textContent
-      }
-    };
-
-    // Логирование данных
-    console.log('Данные формы:', formData);
-
-    try {
-      // Отправка через mailto (работает везде)
-      const subject = `Запрос расчета доставки от ${formData.name}`;
-      const body = `
-Имя: ${formData.name}
-Телефон: ${formData.phone}
-Город: ${formData.city}
-Оборудование: ${formData.equipment}
-Срок доставки: ${formData.deliveryInfo.time}
-Стоимость доставки: ${formData.deliveryInfo.price}
-Наличие: ${formData.deliveryInfo.warehouse}
-Комментарий: ${formData.comment || 'нет'}
-Дата: ${formData.date}
-Страница: ${formData.page}
-      `.trim();
-
-      // Создаем временную ссылку mailto
-      const mailtoUrl = `mailto:001@armarost.ru?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-      // Пытаемся отправить
-      const mailWindow = window.open(mailtoUrl, '_blank');
-
-      if (mailWindow) {
-        showMessage('✅ Запрос отправлен! Откроется почтовый клиент. Если не открылся, скопируйте данные из формы.', 'success');
-      } else {
-        showMessage('✅ Данные готовы к отправке. Скопируйте их и отправьте на 001@armarost.ru', 'success');
-      }
-
-      // Очистка формы
-      citySelect.value = '';
-      nameInput.value = '';
-      phoneInput.value = '';
-      equipmentSelect.value = '';
-      commentInput.value = '';
-      deliveryInfo.style.display = 'none';
-      requestForm.style.display = 'none';
-
-      // Сброс выбранных тегов
-      cityTags.forEach(t => t.classList.remove('selected'));
-
-    } catch (error) {
-      console.error('Ошибка:', error);
-      showMessage('❌ Произошла ошибка. Позвоните нам: +7 (989) 610-02-04', 'error');
-    } finally {
-      // Восстановление кнопки
-      submitBtn.innerHTML = originalText;
-      submitBtn.disabled = false;
-    }
   });
 });
 </script>

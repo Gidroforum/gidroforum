@@ -5,9 +5,6 @@
   siteDescription = "Описание сайта по умолчанию"
   truncateSummary = 160
   plainifySummary = true
-
-
-
 # БЛОК РЕГИОНАЛЬНОСТИ - ДОСТАВКА ПО РОССИИ
   [params.delivery]
     title = "Доставка промышленных насосов по всей России"

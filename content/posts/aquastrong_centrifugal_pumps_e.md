@@ -5,7 +5,6 @@ description: 'Полный обзор моноблочных центробеж�
 author: 'ГИДРОФОРУМ'
 cover: '/images/aquastrong_centrifugal_pumps_est_review.png'
 tags: ["Aquastrong"]
-regions: ["rostov-na-donu", "rossiya"]  # ← ДОБАВЛЯЕМ РЕГИОНЫ!
 theme: 'light'
 ---
 

@@ -6,6 +6,5 @@ draft: true
 author: ""
 cover: ""
 tags: [""]
-regions: ["rossiya"]  # По умолчанию - вся Россия
 theme: "light"
 ---

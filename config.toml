@@ -8,25 +8,11 @@ title = 'ГИДРОФОРУМ'
 copyright = 'gidroforum.ru'
 theme = ["gidroforum"]
 pagerSize = 5
-
-# ============ ДОБАВЛЯЕМ ЭТОТ БЛОК ============
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  region = "regions"     # НОВАЯ таксономия!
-  brand = "brands"       # Можно добавить для брендов
-# ============================================
-
 [params]
   defaultCover = '/images/logo_site.png'
   email = '001@armarost.ru'
   phone = '+79896100204'
   adress = 'Ростов-на-Дону, ул. Вавилова, 62В'
-
-  # ДОПОЛНИТЕЛЬНО для регионов (опционально)
-  regionDefaultTitle = "Форум по насосам в"
-  showRegionInTitle = true
-
   [[params.socialMedia]]
     name = 'ГИДРОФОРУМ'
     url = '/'

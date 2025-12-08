@@ -5,3 +5,131 @@
   siteDescription = "Описание сайта по умолчанию"
   truncateSummary = 160
   plainifySummary = true
+# БЛОК РЕГИОНАЛЬНОСТИ - ДОСТАВКА ПО РОССИИ
+  [params.delivery]
+    title = "Доставка промышленных насосов по всей России"
+    subtitle = "Работаем с юридическими лицами и ИП по безналичному расчету"
+    defaultText = "Рассчитаем стоимость доставки в ваш город за 30 минут"
+
+    # Список городов-миллионников с параметрами доставки
+    [[params.delivery.regions]]
+      name = "Москва"
+      slug = "moskva"
+      deliveryDays = "1-2"
+      priceNote = "Бесплатно при заказе от 500 000 ₽"
+      hasWarehouse = true
+      phone = "+7 (495) XXX-XX-XX"
+
+    [[params.delivery.regions]]
+      name = "Санкт-Петербург"
+      slug = "sankt-peterburg"
+      deliveryDays = "2-3"
+      priceNote = "Сборные грузы 2 раза в неделю"
+      hasWarehouse = true
+      phone = "+7 (812) XXX-XX-XX"
+
+    [[params.delivery.regions]]
+      name = "Новосибирск"
+      slug = "novosibirsk"
+      deliveryDays = "4-6"
+      priceNote = "Экспресс-доставка за 3 дня"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Екатеринбург"
+      slug = "ekaterinburg"
+      deliveryDays = "3-5"
+      priceNote = "Через дистрибьютерский центр"
+      hasWarehouse = true
+
+    [[params.delivery.regions]]
+      name = "Казань"
+      slug = "kazan"
+      deliveryDays = "3-5"
+      priceNote = "Регулярные поставки"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Нижний Новгород"
+      slug = "nizhny-novgorod"
+      deliveryDays = "3-5"
+      priceNote = "Транзит через Москву"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Челябинск"
+      slug = "chelyabinsk"
+      deliveryDays = "4-6"
+      priceNote = "ЖД и автотранспорт"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Самара"
+      slug = "samara"
+      deliveryDays = "3-5"
+      priceNote = "Собственный транспорт"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Омск"
+      slug = "omsk"
+      deliveryDays = "5-7"
+      priceNote = "Авиадоставка доступна"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Ростов-на-Дону"
+      slug = "rostov-na-donu"
+      deliveryDays = "4-6"
+      priceNote = "Морские поставки возможны"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Уфа"
+      slug = "ufa"
+      deliveryDays = "4-6"
+      priceNote = "Через партнерский склад"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Красноярск"
+      slug = "krasnoyarsk"
+      deliveryDays = "6-8"
+      priceNote = "Спецтарифы для предприятий"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Воронеж"
+      slug = "voronezh"
+      deliveryDays = "3-4"
+      priceNote = "Еженедельные рейсы"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Пермь"
+      slug = "perm"
+      deliveryDays = "4-6"
+      priceNote = "Через Екатеринбург"
+      hasWarehouse = false
+
+    [[params.delivery.regions]]
+      name = "Волгоград"
+      slug = "volgograd"
+      deliveryDays = "4-5"
+      priceNote = "Речным транспортом"
+      hasWarehouse = false
+
+  # Дополнительные регионы (не миллионники, но важные для промышленности)
+  [[params.delivery.regions]]
+    name = "Тюмень"
+    slug = "tyumen"
+    deliveryDays = "5-7"
+    priceNote = "Спецтранспорт для негабарита"
+    hasWarehouse = false
+
+  [[params.delivery.regions]]
+    name = "Иркутск"
+    slug = "irkutsk"
+    deliveryDays = "7-10"
+    priceNote = "Контейнерные поставки"
+    hasWarehouse = false

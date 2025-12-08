@@ -69,7 +69,7 @@
           📩 Запросить расчет стоимости
         </button>
         <div class="form-note">
-          Менеджер свяжется с вами в течение 15 минут для уточнения деталей
+          Менеджер свяжется с вами в течение часа для уточнения деталей
         </div>
         <div id="formMessage" class="form-message"></div>
       </div>
@@ -533,7 +533,7 @@ Email: ${formData.email}
 Страница: ${formData.page}
     `.trim();
 
-    const mailtoUrl = `mailto:001@armarost.ru?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:logvinenko.a@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     return new Promise((resolve) => {
       // Пытаемся открыть почтовый клиент

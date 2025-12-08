@@ -1,0 +1,209 @@
+{{ define "main" }}
+<div class="container py-5">
+    <!-- Хлебные крошки -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Главная</a></li>
+            <li class="breadcrumb-item"><a href="/regions/">Регионы</a></li>
+            <li class="breadcrumb-item active">{{ .Title }}</li>
+        </ol>
+    </nav>
+
+    <!-- Шапка региона -->
+    <div class="row mb-5">
+        <div class="col-lg-8">
+            <h1 class="display-6 mb-3">{{ .Title }}</h1>
+            <p class="lead">{{ .Description }}</p>
+
+            <!-- Кнопки действий -->
+            <div class="d-flex gap-2 mb-4">
+                <a href="/post/new/?region={{ .File.BaseFileName }}"
+                   class="btn btn-success">
+                    ✍️ Создать тему в этом регионе
+                </a>
+                <button onclick="copyRegionLink()" class="btn btn-outline-secondary">
+                    🔗 Скопировать ссылку
+                </button>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <!-- Статистика региона -->
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h6 class="mb-0">📈 Статистика региона</h6>
+                </div>
+                <div class="card-body">
+                    {{ $regionName := .File.BaseFileName }}
+                    {{ $postsInRegion := where site.RegularPages "Params.regions" "intersect" (slice $regionName) }}
+
+                    <p class="mb-1"><strong>Обсуждений:</strong> {{ len $postsInRegion }}</p>
+                    <p class="mb-1"><strong>Последняя активность:</strong>
+                        {{ if $postsInRegion }}
+                            {{ (index $postsInRegion.ByDate.Reverse 0).Date.Format "02.01.2006" }}
+                        {{ else }}
+                            нет
+                        {{ end }}
+                    </p>
+                    <p class="mb-0"><strong>Участников:</strong>
+                        {{ $authors := slice }}
+                        {{ range $postsInRegion }}
+                            {{ with .Params.author }}
+                                {{ $authors = $authors | append . }}
+                            {{ end }}
+                        {{ end }}
+                        {{ len (uniq $authors) }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контент региона -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="content mb-4">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Обсуждения в регионе -->
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mb-4">📝 Обсуждения в {{ .Title }}</h2>
+
+            {{ $regionName := .File.BaseFileName }}
+            {{ $postsInRegion := where site.RegularPages "Params.regions" "intersect" (slice $regionName) }}
+
+            {{ if $postsInRegion }}
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Тема</th>
+                                <th>Автор</th>
+                                <th>Дата</th>
+                                <th>Ответов</th>
+                                <th>Просмотров</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{ range $postsInRegion.ByDate.Reverse }}
+                                <tr>
+                                    <td>
+                                        <a href="{{ .Permalink }}" class="text-decoration-none">
+                                            {{ .Title }}
+                                        </a>
+                                        <div class="small text-muted">
+                                            {{ range .Params.tags }}
+                                                <span class="badge bg-light text-dark me-1">{{ . }}</span>
+                                            {{ end }}
+                                        </div>
+                                    </td>
+                                    <td class="small">
+                                        {{ with .Params.author }}
+                                            {{ . }}
+                                        {{ else }}
+                                            Аноним
+                                        {{ end }}
+                                    </td>
+                                    <td class="small">{{ .Date.Format "02.01.2006" }}</td>
+                                    <td class="small">0</td> <!-- Можно добавить счетчик комментариев -->
+                                    <td class="small">0</td> <!-- Можно добавить счетчик просмотров -->
+                                </tr>
+                            {{ end }}
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Пагинация (если много постов) -->
+                {{ if gt (len $postsInRegion) 20 }}
+                    <nav aria-label="Навигация по страницам">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Назад</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Вперед</a>
+                            </li>
+                        </ul>
+                    </nav>
+                {{ end }}
+            {{ else }}
+                <div class="alert alert-warning">
+                    <h5 class="alert-heading">Пока нет обсуждений в этом регионе!</h5>
+                    <p>Будьте первым, кто создаст тему обсуждения в {{ .Title }}.</p>
+                    <hr>
+                    <a href="/post/new/?region={{ .File.BaseFileName }}"
+                       class="btn btn-success">
+                        📢 Создать первую тему
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+
+    <!-- Похожие регионы -->
+    {{ $allRegions := where site.RegularPages "Section" "regions" }}
+    {{ $similarRegions := where $allRegions "File.BaseFileName" "!=" .File.BaseFileName }}
+
+    {{ if $similarRegions }}
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-4">📍 Похожие регионы</h3>
+                <div class="row">
+                    {{ range first 3 $similarRegions }}
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h6 class="card-title">
+                                        <a href="{{ .Permalink }}" class="text-decoration-none">
+                                            {{ .Title }}
+                                        </a>
+                                    </h6>
+                                    <p class="card-text small">{{ .Description | truncate 80 }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    {{ end }}
+</div>
+
+<!-- Скрипты -->
+<script>
+function copyRegionLink() {
+    const link = window.location.href;
+    navigator.clipboard.writeText(link).then(() => {
+        alert('Ссылка на регион скопирована в буфер:\n' + link);
+    });
+}
+</script>
+
+<!-- Стили -->
+<style>
+.content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+.content h3 {
+    margin-top: 1.5rem;
+    color: #555;
+}
+.table th {
+    background-color: #f8f9fa;
+    border-top: none;
+}
+.badge {
+    font-size: 0.7em;
+}
+</style>
+{{ end }}

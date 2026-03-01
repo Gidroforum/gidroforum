@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+backend:
+  name: github
+  repo: Gidroforum/gidroforum
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md" # .md файлы
+    # format: yaml     # УБРАТЬ ЭТУ СТРОКУ - по умолчанию YAML
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DDTHH:mm:ss+03:00",
+          picker_utc: false,
+        }
+      - {
+          label: "Author",
+          name: "author",
+          widget: "string",
+          default: "ГИДРОФОРУМ",
+        }
+      - { label: "Cover", name: "cover", widget: images }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Theme", name: "theme", widget: "string", default: "light" }
+      - { label: "Body", name: "body", widget: "markdown" }

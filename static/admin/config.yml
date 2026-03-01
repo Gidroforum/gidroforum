@@ -36,7 +36,7 @@ collections:
           name: "cover",
           widget: image,
           choose_url: true,
-          accept: "images/*",
+          accept: "/images/*",
         }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Theme", name: "theme", widget: "string", default: "light" }

@@ -36,7 +36,8 @@ collections:
           name: "cover",
           widget: images,
           choose_url: true,
-          default: "/images/aquastrong_nlg_pump_review_2024.png",
+          accept: "images/*"
+          default: "images/aquastrong_nlg_pump_review_2024.png",
         }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Theme", name: "theme", widget: "string", default: "light" }

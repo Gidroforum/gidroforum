@@ -40,12 +40,7 @@ collections:
       - label: "Tags"
         name: "tags"
         widget: "list"
-        separator: ","
-        field: # Уберите лишний дефис перед field
-          label: "Tag"
-          name: "tag"
-          widget: "string"
-        required: false # Добавьте это поле, чтобы теги были необязательными
-        default: [] # Установите пустой массив по умолчанию
+        field: { label: "Tag", name: "tag", widget: "string" }
+        default: []
       - { label: "Theme", name: "theme", widget: "string", default: "light" }
       - { label: "Body", name: "body", widget: "markdown" }

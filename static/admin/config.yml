@@ -31,7 +31,7 @@ collections:
           widget: "string",
           default: "ГИДРОФОРУМ",
         }
-      - { label: "Cover", name: "cover", widget: images }
+      - { label: "Cover", name: "cover", widget: images, choose_url: true }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Theme", name: "theme", widget: "string", default: "light" }
       - { label: "Body", name: "body", widget: "markdown" }

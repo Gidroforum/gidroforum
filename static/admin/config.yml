@@ -31,7 +31,13 @@ collections:
           widget: "string",
           default: "ГИДРОФОРУМ",
         }
-      - { label: "Cover", name: "cover", widget: images, choose_url: true }
+      - {
+          label: "Cover",
+          name: "cover",
+          widget: images,
+          choose_url: true,
+          default: "/images/aquastrong_nlg_pump_review_2024.png",
+        }
       - { label: "Tags", name: "tags", widget: "string" }
       - { label: "Theme", name: "theme", widget: "string", default: "light" }
       - { label: "Body", name: "body", widget: "markdown" }

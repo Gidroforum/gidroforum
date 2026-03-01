@@ -38,6 +38,10 @@ collections:
           choose_url: true,
           accept: "/images/*",
         }
-      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Tags", name: "tags",   widget: "list",
+      field:
+        label: "Tag"
+        name: "tag"
+        widget: "string" }
       - { label: "Theme", name: "theme", widget: "string", default: "light" }
       - { label: "Body", name: "body", widget: "markdown" }

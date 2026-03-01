@@ -13,8 +13,7 @@ collections:
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
-    extension: "md" # .md файлы
-    # format: yaml     # УБРАТЬ ЭТУ СТРОКУ - по умолчанию YAML
+    extension: "md"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -34,14 +33,19 @@ collections:
       - {
           label: "Cover",
           name: "cover",
-          widget: image,
+          widget: "image",
           choose_url: true,
           accept: "/images/*",
         }
-        - label: "Tags"
-          name: "tags"
-          widget: "list"
-          separator: ","
-          field: { label: "Tag", name: "tag", widget: "string" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        separator: ","
+        field: # Уберите лишний дефис перед field
+          label: "Tag"
+          name: "tag"
+          widget: "string"
+        required: false # Добавьте это поле, чтобы теги были необязательными
+        default: [] # Установите пустой массив по умолчанию
       - { label: "Theme", name: "theme", widget: "string", default: "light" }
       - { label: "Body", name: "body", widget: "markdown" }

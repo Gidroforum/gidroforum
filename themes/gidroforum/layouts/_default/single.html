@@ -66,6 +66,7 @@
             {{ $content = $content | replaceRE "</ul>" "</ul></div>" }}
             {{ $content |  safeHTML}}
           </div>
+          {{ partial "seo-related.html" . }}
           {{- if and $notPlainPage site.Params.ShowCopyRight -}}
           <div class="component">
 

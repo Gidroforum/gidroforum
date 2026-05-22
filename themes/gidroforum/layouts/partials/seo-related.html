@@ -1,0 +1,70 @@
+{{ $current := . }}
+{{ $related := where site.RegularPages "Section" "posts" | first 12 }}
+{{ with .Params.tags }}
+  {{ $tag := index . 0 }}
+  {{ $related = where site.RegularPages "Params.tags" "intersect" (slice $tag) | first 12 }}
+{{ end }}
+
+<section class="seo-related component">
+  <div class="component-content">
+    <h2>Полезные материалы по теме</h2>
+    <div class="seo-related__grid">
+      {{ range first 8 $related }}
+        {{ if ne .Permalink $current.Permalink }}
+          <a class="seo-related__item" href="{{ .RelPermalink }}">
+            <span class="seo-related__title">{{ .Title }}</span>
+            {{ with .Params.description }}
+              <span class="seo-related__desc">{{ . }}</span>
+            {{ end }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<style>
+  .seo-related {
+    margin: 32px 0 12px;
+  }
+
+  .seo-related h2 {
+    color: #1f2937;
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+
+  .seo-related__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+  }
+
+  .seo-related__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 112px;
+    padding: 16px;
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    color: #1f2937;
+    text-decoration: none;
+    background: #fff;
+  }
+
+  .seo-related__item:hover {
+    border-color: #2b6cb0;
+  }
+
+  .seo-related__title {
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .seo-related__desc {
+    color: #526173;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+</style>

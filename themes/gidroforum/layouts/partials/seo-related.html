@@ -5,9 +5,9 @@
   {{ $related = where site.RegularPages "Params.tags" "intersect" (slice $tag) | first 12 }}
 {{ end }}
 
-<section class="seo-related component">
+<section class="seo-related component pagebody">
   <div class="component-content">
-    <h2>Полезные материалы по теме</h2>
+    <h2 class="pagebody-header">Полезные материалы по теме</h2>
     <div class="seo-related__grid">
       {{ range first 8 $related }}
         {{ if ne .Permalink $current.Permalink }}
@@ -25,12 +25,11 @@
 
 <style>
   .seo-related {
-    margin: 32px 0 12px;
+    margin: 32px auto 12px;
+    text-align: center;
   }
 
   .seo-related h2 {
-    color: #1f2937;
-    font-size: 24px;
     margin: 0 0 16px;
   }
 
@@ -48,9 +47,10 @@
     padding: 16px;
     border: 1px solid #d8dee8;
     border-radius: 8px;
-    color: #1f2937;
+    color: inherit;
     text-decoration: none;
     background: #fff;
+    font: inherit;
   }
 
   .seo-related__item:hover {
@@ -58,13 +58,13 @@
   }
 
   .seo-related__title {
-    font-weight: 700;
-    line-height: 1.35;
+    font-weight: inherit;
+    line-height: inherit;
   }
 
   .seo-related__desc {
-    color: #526173;
-    font-size: 14px;
-    line-height: 1.45;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
   }
 </style>

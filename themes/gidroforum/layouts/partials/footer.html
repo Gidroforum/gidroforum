@@ -13,7 +13,7 @@
               <div class="email"></div>
               <div class="email"></div>
             <div class="email">Email: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></div>
-            <div class="email">Телефон: <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a></div>
+            <div class="email">Телефон: <a href="tel:{{ site.Params.phoneLink | default site.Params.phone }}">{{ site.Params.phone }}</a></div>
 
           </div>
           <div class="item">

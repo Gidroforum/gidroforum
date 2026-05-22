@@ -68,7 +68,7 @@
                 <!-- Кнопки для быстрого контакта -->
                 <div class="action-buttons">
                     <a
-                        href="tel:+79896100204"
+                        href="tel:{{ site.Params.phoneLink | default site.Params.phone }}"
                         class="action-btn phone-action"
                         id="phoneBtn"
                     >
@@ -81,7 +81,7 @@
                     </a>
 
                     <a
-                        href="https://wa.me/79896100204"
+                        href="https://wa.me/{{ site.Params.whatsapp | default site.Params.phoneLink }}"
                         target="_blank"
                         class="action-btn whatsapp-action"
                         id="whatsappBtn"
@@ -95,7 +95,7 @@
                     </a>
 
                     <a
-                        href="mailto:001@armarost.ru"
+                        href="mailto:{{ site.Params.email }}"
                         class="action-btn email-action"
                         id="emailBtn"
                     >
@@ -774,11 +774,11 @@
             );
 
             if (actionWhatsappBtn) {
-                actionWhatsappBtn.href = `https://wa.me/79896100204?text=${encodeURIComponent(whatsappText)}`;
+                actionWhatsappBtn.href = `https://wa.me/{{ site.Params.whatsapp | default site.Params.phoneLink }}?text=${encodeURIComponent(whatsappText)}`;
             }
 
             if (actionEmailBtn) {
-                actionEmailBtn.href = `mailto:001@armarost.ru?subject=${encodeURIComponent(emailSubject)}`;
+                actionEmailBtn.href = `mailto:{{ site.Params.email }}?subject=${encodeURIComponent(emailSubject)}`;
             }
 
             deliveryInfo.style.display = "block";

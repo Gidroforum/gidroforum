@@ -10,9 +10,11 @@ theme = ["gidroforum"]
 pagerSize = 5
 [params]
   defaultCover = '/images/logo_site.png'
-  email = '001@armarost.ru'
-  phone = '+79896100204'
-  adress = 'Ростов-на-Дону, ул. Вавилова, 62В'
+  email = 'fsa@armarost.ru'
+  phone = '+7 (863) 209-76-96'
+  phoneLink = '+78632097696'
+  whatsapp = '78632097696'
+  adress = 'Россия, Ростов-на-Дону, пер. 1-ый Машиностроительный, 8/1'
   [[params.socialMedia]]
     name = 'ГИДРОФОРУМ'
     url = '/'

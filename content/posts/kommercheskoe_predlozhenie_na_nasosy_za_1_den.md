@@ -1,6 +1,6 @@
 ---
 title: 'Как получить коммерческое предложение на насосы за 1 день'
-date: '2026-05-22'
+date: '2026-05-10'
 description: 'Коммерческое предложение на насосы за 1 день: какие данные отправить поставщику, как ускорить подбор, что должно быть в КП и как сравнивать предложения по насосному оборудованию.'
 author: 'ГИДРОФОРУМ'
 tags: ["Интересные статьи", "Насосное оборудование", "B2B"]
@@ -151,4 +151,3 @@ cover: '/images/td_circulation_pumps_inline_type_cnp.png'
 - [Как выбрать канализационный насос для предприятия](/posts/kak_vybrat_kanalizacionnyy_nasos_dlya_predpriyatiya/)
 - [Доставка насосов по России: сроки и логистика](/posts/dostavka_nasosov_po_rossii_sroki_logistika_i_nyuansy/)
 - [ТОП производителей насосов: Wilo, CNP, Flygt, Aquastrong](/posts/top_proizvoditeley_nasosov_wilo_cnp_flygt_aquastrong/)
-

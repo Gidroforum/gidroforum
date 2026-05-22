@@ -1,11 +1,11 @@
-baseURL = 'https://gidroforum.ru'
+baseURL = 'https://blog.gidroforum.ru'
 canonifyURLs = true
 languageCode = 'ru'
 defaultContentLanguage = "ru"
 hasCJKLanguage = true
 enableEmoji = true
 title = 'ГИДРОФОРУМ'
-copyright = 'gidroforum.ru'
+copyright = 'blog.gidroforum.ru'
 theme = ["gidroforum"]
 pagerSize = 5
 [params]

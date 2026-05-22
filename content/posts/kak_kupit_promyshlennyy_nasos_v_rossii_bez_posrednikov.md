@@ -164,4 +164,3 @@ cover: '/images/oil_pumps_technical_specs_and_advantages.png'
 - [Как выбрать канализационный насос для предприятия](/posts/kak_vybrat_kanalizacionnyy_nasos_dlya_predpriyatiya/)
 - [Доставка насосов по России: сроки и логистика](/posts/dostavka_nasosov_po_rossii_sroki_logistika_i_nyuansy/)
 - [ТОП производителей насосов: Wilo, CNP, Flygt, Aquastrong](/posts/top_proizvoditeley_nasosov_wilo_cnp_flygt_aquastrong/)
-

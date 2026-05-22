@@ -1,6 +1,6 @@
 ---
 title: 'Где купить насосное оборудование оптом в России: гид для B2B-заказчика'
-date: '2026-05-22'
+date: '2026-05-19'
 description: 'Оптовая продажа насосов и насосного оборудования в России: как выбрать поставщика, получить КП, сравнить бренды, снизить стоимость закупки и организовать доставку по РФ.'
 author: 'ГИДРОФОРУМ'
 tags: ["Интересные статьи", "Насосное оборудование", "B2B"]
@@ -151,4 +151,3 @@ cover: '/images/cnp_niso_nis_nisf_pumps.png'
 - [Как выбрать канализационный насос для предприятия](/posts/kak_vybrat_kanalizacionnyy_nasos_dlya_predpriyatiya/)
 - [Доставка насосов по России: сроки и логистика](/posts/dostavka_nasosov_po_rossii_sroki_logistika_i_nyuansy/)
 - [ТОП производителей насосов: Wilo, CNP, Flygt, Aquastrong](/posts/top_proizvoditeley_nasosov_wilo_cnp_flygt_aquastrong/)
-

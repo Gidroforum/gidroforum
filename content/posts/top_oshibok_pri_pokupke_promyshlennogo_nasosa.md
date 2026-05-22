@@ -1,6 +1,6 @@
 ---
 title: 'ТОП ошибок при покупке промышленного насоса: как не потерять деньги на закупке'
-date: '2026-05-22'
+date: '2026-05-16'
 description: 'Ошибки при покупке промышленного насоса: неверный напор, неправильная среда, погоня за низкой ценой, отсутствие автоматики, слабая логистика и другие риски B2B-закупки.'
 author: 'ГИДРОФОРУМ'
 tags: ["Интересные статьи", "Насосное оборудование", "B2B"]
@@ -157,4 +157,3 @@ cover: '/images/stocnomasnye_nasosy_sm_obzor_i_primenenie.png'
 - [Как выбрать канализационный насос для предприятия](/posts/kak_vybrat_kanalizacionnyy_nasos_dlya_predpriyatiya/)
 - [Доставка насосов по России: сроки и логистика](/posts/dostavka_nasosov_po_rossii_sroki_logistika_i_nyuansy/)
 - [ТОП производителей насосов: Wilo, CNP, Flygt, Aquastrong](/posts/top_proizvoditeley_nasosov_wilo_cnp_flygt_aquastrong/)
-

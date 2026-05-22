@@ -1,6 +1,6 @@
 ---
 title: 'Как выбрать насос для предприятия: чек-лист закупщика и инженера'
-date: '2026-05-22'
+date: '2026-05-01'
 description: 'Как выбрать насос для предприятия: чек-лист закупщика, инженера и службы эксплуатации. Параметры, документы, КП, бренды, доставка, автоматика и ошибки выбора.'
 author: 'ГИДРОФОРУМ'
 tags: ["Интересные статьи", "Насосное оборудование", "B2B"]
@@ -176,4 +176,3 @@ cover: '/images/skvazhinnye_nasosy_ecv_obzor_i_primenenie.png'
 - [Как выбрать канализационный насос для предприятия](/posts/kak_vybrat_kanalizacionnyy_nasos_dlya_predpriyatiya/)
 - [Доставка насосов по России: сроки и логистика](/posts/dostavka_nasosov_po_rossii_sroki_logistika_i_nyuansy/)
 - [ТОП производителей насосов: Wilo, CNP, Flygt, Aquastrong](/posts/top_proizvoditeley_nasosov_wilo_cnp_flygt_aquastrong/)
-
